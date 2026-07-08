@@ -147,10 +147,22 @@ button{font-family:inherit}
 .stat .n.pos{color:var(--teal)} .stat .n.neg{color:var(--wine)}
 
 /* svg chart wrappers */
-.chart{padding:8px 12px 16px}
-.chart svg{width:100%; height:auto; display:block; overflow:visible}
-.bar-x{font-size:9px; fill:var(--ink-3); font-weight:500}
-.bar-v{font-size:9.5px; fill:var(--ink-2); font-weight:600}
+.chart{padding:16px 18px 18px}
+
+/* barras verticais (volume no tempo) — HTML, texto em px fixo */
+.vbars{display:flex; align-items:flex-end; gap:12px; height:132px}
+.vbar{flex:1; display:flex; flex-direction:column; align-items:center; justify-content:flex-end; gap:7px}
+.vbar .v{font-size:11px; font-weight:600; color:var(--ink-3); font-variant-numeric:tabular-nums}
+.vbar .b{width:56%; max-width:30px; border-radius:3px 3px 0 0; min-height:2px}
+.vbar .x{font-size:11px; color:var(--ink-3); font-weight:500}
+
+/* fluxo aberturas vs baixas — barras horizontais finas */
+.flow{display:flex; flex-direction:column; gap:13px}
+.flow-row{display:grid; grid-template-columns:60px 1fr 52px; align-items:center; gap:12px}
+.flow-row .fl{font-size:11px; color:var(--ink-3); font-weight:500}
+.flow-row .ft{height:7px; background:var(--line-2); border-radius:4px; overflow:hidden}
+.flow-row .ff{display:block; height:100%; border-radius:4px}
+.flow-row .fv{font-size:12px; font-weight:600; color:var(--ink-2); font-variant-numeric:tabular-nums; text-align:right}
 
 /* cnae table */
 .tbl{width:100%; border-collapse:collapse; font-size:12.5px}
@@ -386,34 +398,28 @@ const evClass=e=>({ "M&A":"ev-ma","Captação":"ev-cap","IPO":"ev-ipo","Distress
 
 let VIEW='termometro', CURRENT=null, FILTER={setor:'todos', evento:'todos'};
 
-/* ---- svg bar chart (série temporal) ---- */
+/* ---- barras verticais (série temporal) — HTML/CSS, rótulos em px fixo ---- */
 function barChart(serie, color){
-  const w=100, h=52, n=serie.length, gap=6;
-  const max=Math.max(...serie.map(d=>d[1]))*1.15;
-  const bw=(w-gap*(n-1))/n;
-  let bars='', labels='';
-  serie.forEach((d,i)=>{
-    const bh=Math.max(2,(d[1]/max)*(h-16));
-    const x=i*(bw+gap), y=h-14-bh;
-    bars+=`<rect x="${x}" y="${y}" width="${bw}" height="${bh}" rx="2" fill="${color}" opacity="${i===n-1?1:.55}"/>`;
-    bars+=`<text class="bar-v" x="${x+bw/2}" y="${y-3}" text-anchor="middle">${d[1]}</text>`;
-    labels+=`<text class="bar-x" x="${x+bw/2}" y="${h-2}" text-anchor="middle">${d[0]}</text>`;
-  });
-  return `<svg viewBox="0 0 ${w} ${h}" preserveAspectRatio="none" role="img">${bars}${labels}</svg>`;
+  const max=Math.max(...serie.map(d=>d[1]),1), H=92;   // zona útil da barra em px
+  return `<div class="vbars">` + serie.map((d,i)=>{
+    const h=Math.max(2, Math.round((d[1]/max)*H));
+    const op=(i===serie.length-1)?1:.5;                 // destaca o mês corrente
+    return `<div class="vbar">
+      <span class="v">${d[1]}</span>
+      <span class="b" style="height:${h}px;background:${color};opacity:${op}"></span>
+      <span class="x">${d[0]}</span>
+    </div>`;
+  }).join('') + `</div>`;
 }
-/* ---- aberturas vs baixas (barras espelhadas) ---- */
+/* ---- aberturas vs baixas — barras horizontais finas, sem sobreposição ---- */
 function flowChart(ab, bx){
-  const w=100,h=46, max=Math.max(ab,bx)*1.2, mid=h/2;
-  const abH=(ab/max)*(mid-6), bxH=(bx/max)*(mid-6);
-  return `<svg viewBox="0 0 ${w} ${h}" preserveAspectRatio="none" role="img">
-    <line x1="0" y1="${mid}" x2="${w}" y2="${mid}" stroke="var(--line)" stroke-width="1"/>
-    <rect x="24" y="${mid-abH}" width="20" height="${abH}" rx="2" fill="var(--teal)"/>
-    <text class="bar-v" x="34" y="${mid-abH-2}" text-anchor="middle">${fmt(ab)}</text>
-    <rect x="56" y="${mid}" width="20" height="${bxH}" rx="2" fill="var(--wine)"/>
-    <text class="bar-v" x="66" y="${mid+bxH+8}" text-anchor="middle">${fmt(bx)}</text>
-    <text class="bar-x" x="34" y="6" text-anchor="middle">aberturas</text>
-    <text class="bar-x" x="66" y="${h-1}" text-anchor="middle">baixas</text>
-  </svg>`;
+  const max=Math.max(ab,bx,1);
+  const row=(label,val,col)=>`<div class="flow-row">
+    <span class="fl">${label}</span>
+    <span class="ft"><span class="ff" style="width:${(val/max)*100}%;background:${col}"></span></span>
+    <span class="fv">${fmt(val)}</span>
+  </div>`;
+  return `<div class="flow">${row('aberturas',ab,'var(--teal)')}${row('baixas',bx,'var(--wine)')}</div>`;
 }
 
 /* ============================================================ TERMÔMETRO */
