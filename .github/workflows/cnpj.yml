@@ -1,0 +1,49 @@
+name: Atualiza estrutura CNPJ (RadarPE)
+
+# Roda a agregação CNPJ/CNAE no BigQuery e faz merge do bloco `estrutura` no
+# data.json. Mensal, acompanhando o ciclo de atualização da RFB.
+# Pré-requisito: o data.json já deve existir (rode o workflow de notícias antes,
+# ou dispare-o manualmente uma vez).
+
+on:
+  schedule:
+    - cron: '0 7 3 * *'        # dia 3 de cada mês, 07:00 UTC
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: radarpe-data
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Autenticar no Google Cloud
+        uses: google-github-actions/auth@v2
+        with:
+          credentials_json: ${{ secrets.GCP_SA_KEY }}   # define GOOGLE_APPLICATION_CREDENTIALS
+
+      - name: Instalar dependências
+        run: pip install google-cloud-bigquery
+
+      - name: Rodar agregação CNPJ/CNAE
+        env:
+          GCP_PROJECT: ${{ secrets.GCP_PROJECT }}
+        run: python aggregate_cnpj.py
+
+      - name: Commitar data.json (se mudou)
+        run: |
+          git config user.name  "radarpe-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data.json
+          git diff --staged --quiet || git commit -m "chore: atualiza estrutura CNPJ $(date -u +%F)"
+          git push
