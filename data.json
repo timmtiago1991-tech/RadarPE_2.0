@@ -1,0 +1,228 @@
+{
+  "meta": {
+    "geradoEm": "08/07/2026",
+    "janela": "últimos 30 dias",
+    "baseCNPJ": "RFB/CNPJ · jan/2026",
+    "fonteNoticias": "GDELT DOC API · backfill 180d"
+  },
+  "setores": [
+    {
+      "id": "saude",
+      "nome": "Saúde",
+      "cor": "#2FA98E",
+      "news": {
+        "count": 16,
+        "avg90": 15,
+        "momentum": 0.07,
+        "trend": "flat",
+        "serie": [
+          [
+            "fev",
+            9
+          ],
+          [
+            "mar",
+            43
+          ],
+          [
+            "abr",
+            0
+          ],
+          [
+            "mai",
+            9
+          ],
+          [
+            "jun",
+            26
+          ],
+          [
+            "jul",
+            0
+          ]
+        ],
+        "eventos": {
+          "Regulatório": 15,
+          "Tese": 14,
+          "Resultado": 51,
+          "Distress": 6,
+          "M&A": 1
+        }
+      },
+      "feed": [
+        [
+          "22/06",
+          "riotimesonline.com",
+          "Richemont Record Year Shadowed by China Risk 2026",
+          "Resultado",
+          [
+            "Richemont"
+          ],
+          ""
+        ],
+        [
+          "22/06",
+          "jornaldebrasilia.com.br",
+          "Como as bets estão mudando o varejo e disputando o bolso do consumidor",
+          "Tese",
+          [],
+          ""
+        ],
+        [
+          "21/06",
+          "regiaonoroeste.com",
+          "Ministério da Saúde investirá R$ 70 milhões para expandir teleatendimento a apostadores compulsivos",
+          "Regulatório",
+          [],
+          "R$ 70 milhões"
+        ],
+        [
+          "21/06",
+          "estadao.com.br",
+          "Como a Rede DOr transforma excelência hospitalar em cuidado mais seguro",
+          "Resultado",
+          [
+            "Rede D'Or"
+          ],
+          ""
+        ],
+        [
+          "21/06",
+          "canaltech.com.br",
+          "6 ar - condicionados com filtro HEPA para ajudar você a espirrar menos no outono",
+          "Resultado",
+          [],
+          ""
+        ],
+        [
+          "21/06",
+          "tribunaonline.com.br",
+          "Governo federal iniciará testes clínicos para adotar canetas emagrecedoras no SUS",
+          "Regulatório",
+          [
+            "SUS"
+          ],
+          ""
+        ],
+        [
+          "21/06",
+          "hojeemdia.com.br",
+          "Tratamento do Alzheimer avança , mas cura ainda é sonho distante",
+          "Tese",
+          [],
+          ""
+        ],
+        [
+          "21/06",
+          "tribunaonline.com.br",
+          "Mounjaro do Paraguai apreendido no ES : especialistas alertam para os riscos",
+          "Regulatório",
+          [
+            "Mounjaro"
+          ],
+          ""
+        ]
+      ],
+      "estrutura": {},
+      "fonteSetorial": {},
+      "teses": []
+    },
+    {
+      "id": "educacao",
+      "nome": "Educação",
+      "cor": "#123FD6",
+      "news": {
+        "count": 1,
+        "avg90": 1,
+        "momentum": 0.0,
+        "trend": "flat",
+        "serie": [
+          [
+            "fev",
+            0
+          ],
+          [
+            "mar",
+            0
+          ],
+          [
+            "abr",
+            0
+          ],
+          [
+            "mai",
+            0
+          ],
+          [
+            "jun",
+            1
+          ],
+          [
+            "jul",
+            0
+          ]
+        ],
+        "eventos": {
+          "Resultado": 1
+        }
+      },
+      "feed": [
+        [
+          "23/06",
+          "tribunadonorte.com.br",
+          "Hub do Leite busca solues para fortalecer cadeia no Rio Grande do Norte",
+          "Resultado",
+          [
+            "Hub do Leite"
+          ],
+          ""
+        ]
+      ],
+      "estrutura": {},
+      "fonteSetorial": {},
+      "teses": []
+    },
+    {
+      "id": "agro",
+      "nome": "Agro",
+      "cor": "#6DBE45",
+      "news": {
+        "count": 0,
+        "avg90": 1,
+        "momentum": -1.0,
+        "trend": "down",
+        "serie": [
+          [
+            "fev",
+            0
+          ],
+          [
+            "mar",
+            0
+          ],
+          [
+            "abr",
+            0
+          ],
+          [
+            "mai",
+            0
+          ],
+          [
+            "jun",
+            0
+          ],
+          [
+            "jul",
+            0
+          ]
+        ],
+        "eventos": {}
+      },
+      "feed": [],
+      "estrutura": {},
+      "fonteSetorial": {},
+      "teses": []
+    }
+  ]
+}
