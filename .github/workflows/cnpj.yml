@@ -45,5 +45,7 @@ jobs:
           git config user.name  "radarpe-bot"
           git config user.email "actions@users.noreply.github.com"
           git add data.json
-          git diff --staged --quiet || git commit -m "chore: atualiza estrutura CNPJ $(date -u +%F)"
+          git diff --staged --quiet && echo "sem mudanças" && exit 0
+          git commit -m "chore: atualiza estrutura CNPJ $(date -u +%F)"
+          git pull --rebase origin main
           git push
