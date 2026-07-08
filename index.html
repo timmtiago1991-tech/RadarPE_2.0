@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RadarPE 2.0 — Inteligência Setorial | Private Equity Brasil</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+/* ============================================================
+   RadarPE 2.0 — tokens
+   Paleta institucional (referência Vinci Compass):
+   navy #0522A6 · azul #123FD6 · ciano #00AEEF
+   teal #2FA98E (+) · verde #6DBE45 (+) · vinho #8E3A63 (atenção/-)
+   ============================================================ */
+:root{
+  --navy:#0522A6; --blue:#123FD6; --blue-2:#1560E0; --cyan:#00AEEF;
+  --teal:#2FA98E; --green:#6DBE45; --wine:#8E3A63;
+  --up:#2FA98E; --down:#8E3A63; --flat:#8C97B8;
+
+  --bg:#F5F7FB; --panel:#FFFFFF; --panel-2:#FBFCFE;
+  --ink:#12204A; --ink-2:#4A567C; --ink-3:#8390B4;
+  --line:#E4E9F4; --line-2:#EEF1F8;
+  --brand-soft:#7FB0F2;
+
+  --radius:12px; --radius-sm:8px;
+  --shadow:0 1px 2px rgba(9,26,84,.06), 0 8px 24px rgba(9,26,84,.05);
+  --mono:'Inter',ui-monospace,monospace;
+}
+[data-theme="dark"]{
+  --bg:#070D24; --panel:#0F1738; --panel-2:#0C1330;
+  --ink:#EAEEFB; --ink-2:#A9B4DA; --ink-3:#6E7AA6;
+  --line:#1E2853; --line-2:#182146;
+  --shadow:0 1px 2px rgba(0,0,0,.3), 0 8px 28px rgba(0,0,0,.35);
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{
+  background:var(--bg); color:var(--ink);
+  font-family:Inter,'Helvetica Neue',Arial,sans-serif;
+  -webkit-font-smoothing:antialiased; line-height:1.5;
+  transition:background .25s ease,color .25s ease;
+}
+a{color:inherit}
+button{font-family:inherit}
+
+/* ============================================================ HEADER (spec RadarPE) */
+.rpe-header{
+  position:sticky; top:0; z-index:40;
+  background:linear-gradient(115deg,#123FD6 0%,#0522A6 100%);
+  box-shadow:0 2px 10px rgba(5,34,166,.28);
+  color:#fff;
+}
+.rpe-header__inner{
+  max-width:1360px; margin:0 auto; padding:0 32px;
+  height:66px; display:flex; align-items:center; gap:34px;
+}
+.rpe-brand{display:flex; align-items:center; gap:12px; text-decoration:none; flex:none; cursor:pointer; background:none; border:0; padding:0}
+.rpe-mark{
+  position:relative; width:40px; height:40px; border-radius:50%;
+  border:1.5px solid rgba(255,255,255,.5); background:rgba(255,255,255,.07);
+  display:flex; align-items:center; justify-content:center;
+}
+.rpe-mark b{font-size:19px; font-weight:700; color:var(--brand-soft); line-height:1}
+.rpe-mark .dot{position:absolute; top:8px; right:9px; width:4px; height:4px; border-radius:50%; background:var(--brand-soft)}
+.rpe-mark .sweep{position:absolute; width:20px; height:1.5px; background:rgba(127,176,242,.55); transform:rotate(-34deg); transform-origin:center;
+  animation:sweep 4s linear infinite}
+@keyframes sweep{to{transform:rotate(326deg)}}
+@media (prefers-reduced-motion:reduce){.rpe-mark .sweep{animation:none}}
+.rpe-word__name{font-size:19px; font-weight:700; color:#fff; letter-spacing:-.01em; display:block}
+.rpe-word__name em{color:var(--brand-soft); font-style:normal}
+.rpe-word__name small{font-size:11px; font-weight:700; color:var(--brand-soft); margin-left:2px}
+.rpe-word__tag{display:block; font-size:9.5px; font-weight:600; letter-spacing:.16em; text-transform:uppercase; color:#A9C2F0; margin-top:2px}
+.rpe-nav{flex:1; display:flex; align-items:center; gap:4px}
+.rpe-nav button{
+  padding:8px 14px; border-radius:7px; font-size:14px; font-weight:500;
+  color:rgba(255,255,255,.72); background:none; border:0; cursor:pointer;
+}
+.rpe-nav button:hover{color:#fff; background:rgba(255,255,255,.09)}
+.rpe-nav button.is-active{color:#fff; background:rgba(255,255,255,.15); font-weight:600}
+.rpe-actions{display:flex; align-items:center; gap:12px; flex:none}
+.rpe-icon{width:38px; height:38px; border-radius:50%; border:1px solid rgba(255,255,255,.4); background:rgba(255,255,255,.09); display:flex; align-items:center; justify-content:center; cursor:pointer}
+.rpe-icon .moon{width:15px; height:15px; border-radius:50%; box-shadow:inset -4px -1px 0 0 #d5e3ff; display:block}
+.rpe-pill{display:flex; align-items:center; gap:6px; border:1px solid rgba(255,255,255,.45); border-radius:999px; padding:9px 17px; font-size:13px; font-weight:600; color:#fff; background:transparent; cursor:pointer}
+.rpe-pill .plus{font-size:15px; line-height:1; font-weight:400}
+.rpe-pill:hover, .rpe-icon:hover{background:rgba(255,255,255,.16)}
+
+/* ============================================================ LAYOUT */
+.wrap{max-width:1360px; margin:0 auto; padding:28px 32px 64px}
+.page-head{display:flex; align-items:flex-end; justify-content:space-between; gap:20px; margin-bottom:22px; flex-wrap:wrap}
+.page-head h1{font-size:23px; font-weight:700; letter-spacing:-.02em; margin:0}
+.page-head p{margin:4px 0 0; color:var(--ink-2); font-size:13.5px; max-width:620px}
+.stamp{font-size:11px; color:var(--ink-3); font-weight:500; white-space:nowrap}
+
+/* cards */
+.card{background:var(--panel); border:1px solid var(--line); border-radius:var(--radius); box-shadow:var(--shadow)}
+.card-h{padding:15px 18px 0; display:flex; align-items:baseline; justify-content:space-between; gap:10px}
+.card-h h3{margin:0; font-size:14px; font-weight:600; letter-spacing:-.01em}
+.src{font-size:10.5px; color:var(--ink-3); font-weight:500}
+
+/* ============================================================ TERMÔMETRO */
+.therm{display:grid; grid-template-columns:1.55fr 1fr; gap:18px; align-items:start}
+.rank{padding:6px 0 10px}
+.rank-row{display:grid; grid-template-columns:150px 1fr auto; align-items:center; gap:16px; padding:14px 18px; border-top:1px solid var(--line-2); cursor:pointer; transition:background .12s}
+.rank-row:first-child{border-top:0}
+.rank-row:hover{background:var(--panel-2)}
+.rank-name{font-weight:600; font-size:14.5px; display:flex; align-items:center; gap:9px}
+.rank-name .glyph{width:8px; height:8px; border-radius:2px}
+.rank-sub{font-size:11px; color:var(--ink-3); font-weight:500; margin-top:2px}
+.mbar{position:relative; height:26px; display:flex; align-items:center}
+.mbar .track{position:absolute; left:50%; top:50%; transform:translateY(-50%); width:1px; height:26px; background:var(--line)}
+.mbar .fill{height:8px; border-radius:4px; position:absolute; top:50%; transform:translateY(-50%)}
+.mval{font-size:13px; font-weight:700; text-align:right; min-width:64px; font-variant-numeric:tabular-nums}
+.mnews{font-size:11px; color:var(--ink-3); text-align:right; font-weight:500; margin-top:1px}
+
+.signal{padding:16px 18px}
+.sig-item{display:flex; gap:11px; padding:11px 0; border-top:1px solid var(--line-2); font-size:12.5px; color:var(--ink-2); line-height:1.45}
+.sig-item:first-child{border-top:0}
+.sig-dot{width:9px; height:9px; border-radius:50%; margin-top:4px; flex:none}
+.sig-item b{color:var(--ink); font-weight:600}
+
+/* legend */
+.legend{display:flex; gap:16px; margin-top:14px; flex-wrap:wrap; font-size:11px; color:var(--ink-3)}
+.legend span{display:inline-flex; align-items:center; gap:6px}
+.legend i{width:10px; height:10px; border-radius:3px; display:inline-block}
+
+/* ============================================================ DETALHE */
+.detail-head{display:flex; align-items:center; gap:14px; margin-bottom:18px; flex-wrap:wrap}
+.back{border:1px solid var(--line); background:var(--panel); color:var(--ink-2); border-radius:8px; padding:7px 12px; font-size:12.5px; font-weight:500; cursor:pointer}
+.back:hover{color:var(--ink); border-color:var(--ink-3)}
+.detail-head h2{margin:0; font-size:21px; font-weight:700; letter-spacing:-.02em}
+.chip{display:inline-flex; align-items:center; gap:6px; font-size:11.5px; font-weight:600; padding:5px 10px; border-radius:999px; border:1px solid var(--line)}
+.chip .foco{width:8px; height:8px; border-radius:50%}
+
+.theses{display:flex; gap:9px; flex-wrap:wrap; margin-bottom:18px}
+
+.two-axis{display:grid; grid-template-columns:1fr 1fr; gap:18px; align-items:start}
+.axis-label{font-size:10.5px; font-weight:700; letter-spacing:.11em; text-transform:uppercase; color:var(--ink-3); margin:0 0 10px}
+.axis-col > .card + .card{margin-top:16px}
+
+/* stat grid */
+.stats{display:grid; grid-template-columns:1fr 1fr; gap:1px; background:var(--line-2); border-radius:var(--radius-sm); overflow:hidden; margin:14px 18px 18px}
+.stat{background:var(--panel); padding:13px 15px}
+.stat .n{font-size:20px; font-weight:700; letter-spacing:-.02em; font-variant-numeric:tabular-nums}
+.stat .l{font-size:11px; color:var(--ink-3); font-weight:500; margin-top:2px}
+.stat .n.pos{color:var(--teal)} .stat .n.neg{color:var(--wine)}
+
+/* svg chart wrappers */
+.chart{padding:8px 12px 16px}
+.chart svg{width:100%; height:auto; display:block; overflow:visible}
+.bar-x{font-size:9px; fill:var(--ink-3); font-weight:500}
+.bar-v{font-size:9.5px; fill:var(--ink-2); font-weight:600}
+
+/* cnae table */
+.tbl{width:100%; border-collapse:collapse; font-size:12.5px}
+.tbl th,.tbl td{text-align:right; padding:9px 18px; border-top:1px solid var(--line-2); font-variant-numeric:tabular-nums}
+.tbl th{font-size:10px; text-transform:uppercase; letter-spacing:.06em; color:var(--ink-3); font-weight:600; border-top:0}
+.tbl td:first-child,.tbl th:first-child{text-align:left}
+.tbl .code{color:var(--ink-3); font-size:11px; font-weight:600}
+.tbl tr:hover{background:var(--panel-2)}
+.net.pos{color:var(--teal); font-weight:600} .net.neg{color:var(--wine); font-weight:600}
+
+/* porte bar */
+.porte{display:flex; height:12px; border-radius:6px; overflow:hidden; margin:14px 18px 8px}
+.porte i{display:block; height:100%}
+.porte-l{display:flex; gap:14px; margin:0 18px 16px; font-size:11px; color:var(--ink-3); flex-wrap:wrap}
+.porte-l span{display:inline-flex; align-items:center; gap:6px}
+.porte-l b{color:var(--ink); font-weight:600}
+
+/* event breakdown chips */
+.events{display:flex; flex-wrap:wrap; gap:7px; padding:14px 18px 18px}
+.ev{display:inline-flex; align-items:center; gap:7px; font-size:11.5px; font-weight:500; color:var(--ink-2); background:var(--panel-2); border:1px solid var(--line); border-radius:7px; padding:6px 10px}
+.ev b{color:var(--ink); font-weight:700; font-variant-numeric:tabular-nums}
+
+/* sector source callout */
+.callout{margin:14px 18px 18px; padding:14px; border-radius:var(--radius-sm); background:linear-gradient(120deg, rgba(18,63,214,.06), rgba(0,174,239,.05)); border:1px solid var(--line)}
+[data-theme="dark"] .callout{background:linear-gradient(120deg, rgba(18,63,214,.16), rgba(0,174,239,.10))}
+.callout .cn{font-size:22px; font-weight:700; letter-spacing:-.02em}
+.callout .cl{font-size:12px; color:var(--ink-2); margin-top:2px}
+.callout .cs{font-size:10.5px; color:var(--ink-3); margin-top:8px}
+
+/* ============================================================ FEED */
+.filters{display:flex; gap:8px; flex-wrap:wrap; margin-bottom:18px}
+.filters button{border:1px solid var(--line); background:var(--panel); color:var(--ink-2); border-radius:999px; padding:7px 14px; font-size:12.5px; font-weight:500; cursor:pointer}
+.filters button:hover{color:var(--ink)}
+.filters button.on{background:var(--blue); border-color:var(--blue); color:#fff}
+.feed{display:flex; flex-direction:column}
+.item{display:grid; grid-template-columns:78px 1fr; gap:16px; padding:16px 18px; border-top:1px solid var(--line-2)}
+.item:first-child{border-top:0}
+.item .date{font-size:11px; color:var(--ink-3); font-weight:600; padding-top:2px}
+.item .ttl{font-size:14px; font-weight:600; letter-spacing:-.01em; line-height:1.4}
+.item .meta{display:flex; gap:8px; flex-wrap:wrap; margin-top:8px; align-items:center}
+.tag{font-size:10.5px; font-weight:600; padding:3px 8px; border-radius:6px; background:var(--panel-2); border:1px solid var(--line); color:var(--ink-2)}
+.tag.ev-ma{color:#fff; background:var(--blue); border-color:var(--blue)}
+.tag.ev-cap{color:#fff; background:var(--teal); border-color:var(--teal)}
+.tag.ev-ipo{color:#fff; background:var(--cyan); border-color:var(--cyan)}
+.tag.ev-dist{color:#fff; background:var(--wine); border-color:var(--wine)}
+.tag.sect{background:transparent}
+.item .co{font-size:11px; color:var(--ink-3)}
+.item .src2{font-size:11px; color:var(--ink-3); font-weight:500}
+
+/* ============================================================ MODAL */
+.overlay{position:fixed; inset:0; background:rgba(6,15,40,.5); display:none; align-items:center; justify-content:center; z-index:60; padding:20px}
+.overlay.open{display:flex}
+.modal{background:var(--panel); border:1px solid var(--line); border-radius:14px; width:100%; max-width:440px; padding:22px; box-shadow:0 24px 60px rgba(6,15,40,.35)}
+.modal h3{margin:0 0 4px; font-size:16px}
+.modal p{margin:0 0 14px; font-size:12.5px; color:var(--ink-2)}
+.modal textarea,.modal input{width:100%; border:1px solid var(--line); background:var(--panel-2); color:var(--ink); border-radius:8px; padding:10px 12px; font-family:inherit; font-size:13px; margin-bottom:10px}
+.modal textarea{min-height:90px; resize:vertical}
+.modal .row{display:flex; gap:10px; justify-content:flex-end; margin-top:4px}
+.btn{border-radius:8px; padding:9px 16px; font-size:13px; font-weight:600; cursor:pointer; border:1px solid var(--line); background:var(--panel); color:var(--ink-2)}
+.btn.primary{background:var(--blue); border-color:var(--blue); color:#fff}
+.toast{position:fixed; bottom:24px; left:50%; transform:translateX(-50%) translateY(20px); background:var(--ink); color:var(--bg); padding:11px 18px; border-radius:10px; font-size:13px; font-weight:500; opacity:0; pointer-events:none; transition:.25s; z-index:70}
+.toast.show{opacity:1; transform:translateX(-50%) translateY(0)}
+
+.foot{max-width:1360px; margin:0 auto; padding:0 32px 40px; font-size:11px; color:var(--ink-3)}
+
+@media (max-width:960px){
+  .therm,.two-axis{grid-template-columns:1fr}
+  .stats{grid-template-columns:1fr 1fr}
+}
+@media (max-width:768px){
+  .rpe-nav{display:none}
+  .rpe-word__tag{display:none}
+  .rpe-header__inner{gap:16px; padding:0 16px}
+  .wrap{padding:20px 16px 48px}
+  .foot{padding:0 16px 32px}
+  .rank-row{grid-template-columns:120px 1fr auto; gap:10px; padding:14px}
+}
+</style>
+</head>
+<body data-theme="light">
+
+<!-- ============ HEADER ============ -->
+<header class="rpe-header">
+  <div class="rpe-header__inner">
+    <button class="rpe-brand" onclick="go('termometro')" aria-label="RadarPE — início">
+      <span class="rpe-mark"><b>R</b><i class="dot"></i><i class="sweep"></i></span>
+      <span class="rpe-word">
+        <span class="rpe-word__name">Radar<em>PE</em> <small>2.0</small></span>
+        <span class="rpe-word__tag">Private Equity &middot; Brasil</span>
+      </span>
+    </button>
+    <nav class="rpe-nav" id="nav">
+      <button data-view="termometro" class="is-active">Termômetro</button>
+      <button data-view="setores">Setores</button>
+      <button data-view="noticias">Notícias</button>
+    </nav>
+    <div class="rpe-actions">
+      <button class="rpe-icon" aria-label="Alternar tema" onclick="toggleTheme()"><span class="moon"></span></button>
+      <button class="rpe-pill" onclick="openModal()"><span class="plus">+</span> Sugerir</button>
+    </div>
+  </div>
+</header>
+
+<main id="app" class="wrap"></main>
+<footer class="foot" id="foot"></footer>
+
+<!-- modal sugerir -->
+<div class="overlay" id="overlay">
+  <div class="modal">
+    <h3>Sugerir fonte ou setor</h3>
+    <p>Fontes, veículos ou setores que o RadarPE deveria monitorar. Vai para a fila de curadoria.</p>
+    <input id="sg-nome" placeholder="Nome (opcional)">
+    <textarea id="sg-txt" placeholder="Ex.: incluir monitoramento de emissões de debêntures da CVM para o setor de Saúde…"></textarea>
+    <div class="row">
+      <button class="btn" onclick="closeModal()">Cancelar</button>
+      <button class="btn primary" onclick="submitSug()">Enviar</button>
+    </div>
+  </div>
+</div>
+<div class="toast" id="toast"></div>
+
+<script>
+/* ============================================================
+   CONTRATO DE DADOS  —  o pipeline (news + CNPJ/CNAE) produz este objeto.
+   Substituir DATA por fetch('data.json') quando o pipeline estiver ligado.
+   Valores abaixo são SEMENTE ILUSTRATIVA (ordens de grandeza plausíveis),
+   com proveniência marcada. Trocar pelos números reais das fontes.
+   ============================================================ */
+const SEED = {
+  meta:{ geradoEm:"03/07/2026", janela:"últimos 30 dias", baseCNPJ:"RFB/CNPJ · jan/2026" },
+  setores:[
+    {
+      id:"saude", nome:"Saúde", cor:"#2FA98E",
+      news:{ count:47, avg90:28, momentum:0.68, trend:"up",
+        serie:[["fev",21],["mar",26],["abr",24],["mai",33],["jun",41],["jul",47]],
+        eventos:{ "M&A":9,"Captação":5,"IPO":1,"Distress":3,"Regulatório":6,"Resultado":7,"Tese":16 } },
+      estrutura:{ fonte:"RFB/CNPJ · jan/2026", ativas:825418, aberturas12m:52340, baixas12m:31120, capitalMedio:214000,
+        porte:{ ME:0.58, EPP:0.23, DEMAIS:0.19 },
+        cnae:[
+          ["86.10","Hospitais",7420,240,410],
+          ["86.30","Clínicas / ambulatorial",286300,21400,12800],
+          ["86.40","Diagnóstico (labs, imagem)",58900,4100,2300],
+          ["86.50","Profissionais de saúde",402100,24600,14100],
+          ["86.60","Apoio à gestão de saúde",9800,900,420],
+          ["21.2x","Fabricação de medicamentos",3120,90,140]
+        ] },
+      fonteSetorial:{ nome:"ANS", n:"51,3 mi", label:"Beneficiários de planos médico-hospitalares", asOf:"abr/2026",
+        nota:"Atlas Econômico-Financeiro publica concentração por grupo econômico em 148 mercados relevantes — insumo direto para tese de consolidação." },
+      teses:[
+        ["Consolidação Prest.","green","Proj. Nefro"],
+        ["Prest. Referência","amber","São Domingos"],
+        ["Manipulação","amber","Proj. Blend"],
+        ["Outros Serviços","amber","GSH / RPH"]
+      ],
+      feed:[
+        ["01/07","Rede de diagnósticos anuncia aquisição de laboratório regional no NE","Brazil Journal","M&A",["Grupo diagnóstico","Lab regional"],"n.d."],
+        ["28/06","Operadora vertical capta R$ 180M em rodada para expansão","NeoFeed","Captação",["Operadora vertical"],"R$ 180M"],
+        ["24/06","ANS divulga dados econômico-financeiros do 1T26; setor mantém lucro","ANS","Regulatório",[],""],
+        ["19/06","Clínica de nefrologia estuda venda de controle","Pipeline/Valor","M&A",["Clínica nefro"],"n.d."],
+        ["12/06","Farmácia de manipulação levanta dívida via debênture","CVM","Captação",["Farma manipulação"],"R$ 60M"]
+      ]
+    },
+    {
+      id:"educacao", nome:"Educação", cor:"#123FD6",
+      news:{ count:19, avg90:23, momentum:-0.17, trend:"down",
+        serie:[["fev",25],["mar",22],["abr",24],["mai",20],["jun",18],["jul",19]],
+        eventos:{ "M&A":3,"Captação":2,"IPO":0,"Distress":2,"Regulatório":3,"Resultado":4,"Tese":5 } },
+      estrutura:{ fonte:"RFB/CNPJ · jan/2026", ativas:512700, aberturas12m:38200, baixas12m:19600, capitalMedio:98000,
+        porte:{ ME:0.66, EPP:0.20, DEMAIS:0.14 },
+        cnae:[
+          ["85.1x","Infantil / fundamental",148200,9200,5100],
+          ["85.20","Ensino médio",21400,1100,700],
+          ["85.3x","Educação superior",9800,320,180],
+          ["85.4x","Educação profissional",41200,3400,1900],
+          ["85.99","Outras (cursos livres, prep.)",292100,24200,11700]
+        ] },
+      fonteSetorial:{ nome:"INEP", n:"9,9 mi", label:"Matrículas na educação superior (Censo)", asOf:"2024",
+        nota:"Censo Superior e Censo Escolar cobrem instituições, vagas e matrículas por rede pública/privada — dimensionamento de mercado endereçável por segmento." },
+      teses:[
+        ["Lifelong Learning","green","MedGrupo · Sanar"],
+        ["Post-Sec Temático","amber","Raiz Educação"],
+        ["Online Program Mgmt","green","—"],
+        ["Plataformas de Ensino","amber","Dot Digital"]
+      ],
+      feed:[
+        ["30/06","Edtech de educação médica capta rodada série B","NeoFeed","Captação",["Edtech médica"],"R$ 90M"],
+        ["25/06","Grupo de ensino superior temático avalia M&A de faculdade regional","Brazil Journal","M&A",["Grupo superior"],"n.d."],
+        ["14/06","Plataforma de ensino reporta desaceleração de matrículas","Valor","Resultado",["Plataforma ensino"],""]
+      ]
+    },
+    {
+      id:"agro", nome:"Agro", cor:"#6DBE45",
+      news:{ count:34, avg90:22, momentum:0.55, trend:"up",
+        serie:[["fev",18],["mar",20],["abr",25],["mai",28],["jun",31],["jul",34]],
+        eventos:{ "M&A":7,"Captação":4,"IPO":0,"Distress":2,"Regulatório":3,"Resultado":5,"Tese":13 } },
+      estrutura:{ fonte:"RFB/CNPJ · jan/2026", ativas:187400, aberturas12m:14600, baixas12m:8100, capitalMedio:410000,
+        porte:{ ME:0.49, EPP:0.27, DEMAIS:0.24 },
+        cnae:[
+          ["20.5x","Fabricação de defensivos / adubos",4200,180,120],
+          ["46.83","Comércio atacadista de insumos agríc.",38600,3100,1700],
+          ["01.xx","Produção de sementes / mudas",22400,1900,980],
+          ["46.9x","Revendas / distribuição",41200,3600,2200]
+        ] },
+      fonteSetorial:{ nome:"MAPA / CONAB", n:"~25% PIB", label:"Peso do agronegócio no PIB brasileiro", asOf:"2025",
+        nota:"CONAB e MAPA publicam safra, área plantada e preços de insumos — proxies de demanda para insumos de alto valor agregado." },
+      teses:[
+        ["Sementes","green","Campeã · Girassol"],
+        ["Biofertilizantes","green","JCO"],
+        ["Saúde Animal","amber","Agener · Ourofino"],
+        ["Revendas","red","Alvorada"]
+      ],
+      feed:[
+        ["02/07","Plataforma de biofertilizantes anuncia aquisição de concorrente","AgFeed","M&A",["Plataforma bio"],"n.d."],
+        ["27/06","Empresa de sementes capta R$ 120M para expansão de capacidade","NeoFeed","Captação",["Sementes"],"R$ 120M"],
+        ["18/06","Revenda de insumos entra em recuperação judicial","Valor","Distress",["Revenda insumos"],""]
+      ]
+    }
+  ]
+};
+
+let DATA = SEED;   // substituído pelo data.json quando o pipeline tiver rodado
+let LIVE = false;  // true quando data.json foi carregado com sucesso
+
+/* ============================================================ helpers */
+const $=(s,el=document)=>el.querySelector(s);
+const fmt=n=> n>=1e6? (n/1e6).toFixed(1).replace('.',',')+' mi'
+            : n>=1e3? (n/1e3).toFixed(0)+' mil' : String(n);
+const fmtInt=n=> n.toLocaleString('pt-BR');
+const pct=v=> (v>0?'+':'')+Math.round(v*100)+'%';
+const trendColor=t=> t==='up'?'var(--up)': t==='down'?'var(--down)':'var(--flat)';
+const focoColor=f=>({green:'#2FA98E',amber:'#E0A526',red:'#D2544E'}[f]||'var(--flat)');
+const evClass=e=>({ "M&A":"ev-ma","Captação":"ev-cap","IPO":"ev-ipo","Distress":"ev-dist" }[e]||"");
+
+let VIEW='termometro', CURRENT=null, FILTER={setor:'todos', evento:'todos'};
+
+/* ---- svg bar chart (série temporal) ---- */
+function barChart(serie, color){
+  const w=100, h=52, n=serie.length, gap=6;
+  const max=Math.max(...serie.map(d=>d[1]))*1.15;
+  const bw=(w-gap*(n-1))/n;
+  let bars='', labels='';
+  serie.forEach((d,i)=>{
+    const bh=Math.max(2,(d[1]/max)*(h-16));
+    const x=i*(bw+gap), y=h-14-bh;
+    bars+=`<rect x="${x}" y="${y}" width="${bw}" height="${bh}" rx="2" fill="${color}" opacity="${i===n-1?1:.55}"/>`;
+    bars+=`<text class="bar-v" x="${x+bw/2}" y="${y-3}" text-anchor="middle">${d[1]}</text>`;
+    labels+=`<text class="bar-x" x="${x+bw/2}" y="${h-2}" text-anchor="middle">${d[0]}</text>`;
+  });
+  return `<svg viewBox="0 0 ${w} ${h}" preserveAspectRatio="none" role="img">${bars}${labels}</svg>`;
+}
+/* ---- aberturas vs baixas (barras espelhadas) ---- */
+function flowChart(ab, bx){
+  const w=100,h=46, max=Math.max(ab,bx)*1.2, mid=h/2;
+  const abH=(ab/max)*(mid-6), bxH=(bx/max)*(mid-6);
+  return `<svg viewBox="0 0 ${w} ${h}" preserveAspectRatio="none" role="img">
+    <line x1="0" y1="${mid}" x2="${w}" y2="${mid}" stroke="var(--line)" stroke-width="1"/>
+    <rect x="24" y="${mid-abH}" width="20" height="${abH}" rx="2" fill="var(--teal)"/>
+    <text class="bar-v" x="34" y="${mid-abH-2}" text-anchor="middle">${fmt(ab)}</text>
+    <rect x="56" y="${mid}" width="20" height="${bxH}" rx="2" fill="var(--wine)"/>
+    <text class="bar-v" x="66" y="${mid+bxH+8}" text-anchor="middle">${fmt(bx)}</text>
+    <text class="bar-x" x="34" y="6" text-anchor="middle">aberturas</text>
+    <text class="bar-x" x="66" y="${h-1}" text-anchor="middle">baixas</text>
+  </svg>`;
+}
+
+/* ============================================================ TERMÔMETRO */
+function renderTermometro(){
+  const sorted=[...DATA.setores].sort((a,b)=>b.news.momentum-a.news.momentum);
+  const maxAbs=Math.max(...sorted.map(s=>Math.abs(s.news.momentum)));
+  const rows=sorted.map(s=>{
+    const m=s.news.momentum, w=(Math.abs(m)/maxAbs)*46, col=trendColor(s.news.trend);
+    const side= m>=0 ? `left:50%;width:${w}%;background:${col}` : `right:50%;width:${w}%;background:${col}`;
+    return `<div class="rank-row" onclick="openSetor('${s.id}')">
+      <div>
+        <div class="rank-name"><span class="glyph" style="background:${s.cor}"></span>${s.nome}</div>
+        <div class="rank-sub">${fmtInt(s.estrutura.ativas)} empresas ativas</div>
+      </div>
+      <div class="mbar"><span class="track"></span><span class="fill" style="${side}"></span></div>
+      <div>
+        <div class="mval" style="color:${col}">${pct(m)}</div>
+        <div class="mnews">${s.news.count} not. · méd. ${s.news.avg90}</div>
+      </div>
+    </div>`;
+  }).join('');
+
+  const signals = buildSignals(sorted);
+
+  return `
+  <div class="page-head">
+    <div><h1>Termômetro setorial</h1>
+    <p>Momentum de mídia (${DATA.meta.janela}) cruzado com o retrato estrutural de empresas. O sinal está na divergência entre os dois eixos.</p></div>
+    <div class="stamp">Notícias: ${DATA.meta.geradoEm} · Estrutura: ${DATA.meta.baseCNPJ}</div>
+  </div>
+  <div class="therm">
+    <div class="card">
+      <div class="card-h"><h3>Setores por momentum de notícias</h3><span class="src">variação vs. média móvel 90d</span></div>
+      <div class="rank">${rows}</div>
+    </div>
+    <div class="card">
+      <div class="card-h"><h3>Sinais de divergência</h3></div>
+      <div class="signal">${signals}</div>
+    </div>
+  </div>
+  <div class="legend">
+    <span><i style="background:var(--teal)"></i> momentum / fluxo positivo</span>
+    <span><i style="background:var(--wine)"></i> momentum / fluxo negativo</span>
+    <span>Clique num setor para o detalhe dos dois eixos.</span>
+  </div>`;
+}
+/* divergência: mídia vs. fluxo líquido de empresas (aberturas - baixas) */
+function buildSignals(sorted){
+  return sorted.map(s=>{
+    const netFlow=s.estrutura.aberturas12m-s.estrutura.baixas12m;
+    const structUp=netFlow>0;
+    const newsUp=s.news.momentum>0.1, newsDown=s.news.momentum<-0.1;
+    let txt, dot;
+    if(newsUp && structUp){ txt=`<b>${s.nome}</b> — mídia aquecida e base em expansão (${pct(s.news.momentum)}, +${fmt(netFlow)} empresas líq.). Movimento consistente.`; dot='var(--teal)'; }
+    else if(newsUp && !structUp){ txt=`<b>${s.nome}</b> — pico de notícias sem expansão da base. Consolidação/M&A mais que entrada de novos players.`; dot='var(--cyan)'; }
+    else if(newsDown && structUp){ txt=`<b>${s.nome}</b> — quieto na mídia, mas base cresce (+${fmt(netFlow)} líq.). Setor pouco coberto vale olhar.`; dot='var(--blue)'; }
+    else { txt=`<b>${s.nome}</b> — momentum de mídia fraco (${pct(s.news.momentum)}). Sem sinal estrutural relevante no período.`; dot='var(--flat)'; }
+    return `<div class="sig-item"><span class="sig-dot" style="background:${dot}"></span><span>${txt}</span></div>`;
+  }).join('');
+}
+
+/* ============================================================ SETORES (grid) */
+function renderSetores(){
+  const cards=DATA.setores.map(s=>{
+    const net=s.estrutura.aberturas12m-s.estrutura.baixas12m;
+    return `<div class="card" style="cursor:pointer" onclick="openSetor('${s.id}')">
+      <div class="card-h"><h3><span class="glyph" style="display:inline-block;width:9px;height:9px;border-radius:2px;background:${s.cor};margin-right:7px"></span>${s.nome}</h3>
+        <span class="src" style="color:${trendColor(s.news.trend)};font-weight:700">${pct(s.news.momentum)}</span></div>
+      <div class="stats" style="margin-top:14px">
+        <div class="stat"><div class="n">${fmt(s.estrutura.ativas)}</div><div class="l">empresas ativas</div></div>
+        <div class="stat"><div class="n ${net>=0?'pos':'neg'}">${net>=0?'+':''}${fmt(net)}</div><div class="l">fluxo líq. 12m</div></div>
+        <div class="stat"><div class="n">${s.news.count}</div><div class="l">notícias (30d)</div></div>
+        <div class="stat"><div class="n">${s.teses.filter(t=>t[1]==='green').length}</div><div class="l">teses em foco</div></div>
+      </div>
+    </div>`;
+  }).join('');
+  return `<div class="page-head"><div><h1>Setores</h1><p>Panorama dos setores-piloto do pipeline. Saúde, Educação e Agro — onde o dado público estrutural tem lastro.</p></div>
+    <div class="stamp">${DATA.meta.baseCNPJ}</div></div>
+    <div class="therm" style="grid-template-columns:repeat(3,1fr)">${cards}</div>`;
+}
+
+/* ============================================================ DETALHE */
+function renderDetalhe(id){
+  const s=DATA.setores.find(x=>x.id===id); if(!s) return renderTermometro();
+  const e=s.estrutura, net=e.aberturas12m-e.baixas12m;
+  const theses=s.teses.map(t=>`<span class="chip"><span class="foco" style="background:${focoColor(t[1])}"></span>${t[0]}${t[2]&&t[2]!=='—'?` · <span style="color:var(--ink-3)">${t[2]}</span>`:''}</span>`).join('');
+  const evOrder=Object.entries(s.news.eventos).sort((a,b)=>b[1]-a[1]);
+  const events=evOrder.map(([k,v])=>`<span class="ev">${k} <b>${v}</b></span>`).join('');
+  const cnaeRows=e.cnae.map(c=>{ const n=c[3]-c[4]; return `<tr><td><span class="code">${c[0]}</span>  ${c[1]}</td><td>${fmtInt(c[2])}</td><td>${fmtInt(c[3])}</td><td>${fmtInt(c[4])}</td><td class="net ${n>=0?'pos':'neg'}">${n>=0?'+':''}${fmtInt(n)}</td></tr>`; }).join('');
+  const p=e.porte;
+  const feed=s.feed.map(f=>feedItem(f, s)).join('');
+
+  return `
+  <div class="detail-head">
+    <button class="back" onclick="go('termometro')">← Termômetro</button>
+    <h2><span class="glyph" style="display:inline-block;width:11px;height:11px;border-radius:3px;background:${s.cor};margin-right:8px;vertical-align:middle"></span>${s.nome}</h2>
+    <span class="chip" style="color:${trendColor(s.news.trend)};font-weight:700;border-color:currentColor">${pct(s.news.momentum)} momentum</span>
+  </div>
+  <div class="theses">${theses}</div>
+
+  <div class="two-axis">
+    <!-- EIXO TEMPORAL / NOTÍCIAS -->
+    <div class="axis-col">
+      <p class="axis-label">Eixo temporal · mídia</p>
+      <div class="card">
+        <div class="card-h"><h3>Volume de notícias</h3><span class="src">${s.news.count} na janela · média 90d ${s.news.avg90}</span></div>
+        <div class="chart">${barChart(s.news.serie, s.cor)}</div>
+      </div>
+      <div class="card">
+        <div class="card-h"><h3>Por tipo de evento</h3></div>
+        <div class="events">${events}</div>
+      </div>
+      <div class="card">
+        <div class="card-h"><h3>Notícias recentes</h3><span class="src">fonte por item</span></div>
+        <div class="feed">${feed}</div>
+      </div>
+    </div>
+
+    <!-- EIXO ESTRUTURAL / CNPJ-CNAE -->
+    <div class="axis-col">
+      <p class="axis-label">Eixo estrutural · CNPJ / CNAE</p>
+      <div class="card">
+        <div class="card-h"><h3>Base de empresas</h3><span class="src">${e.fonte}</span></div>
+        <div class="stats">
+          <div class="stat"><div class="n">${fmtInt(e.ativas)}</div><div class="l">empresas ativas</div></div>
+          <div class="stat"><div class="n ${net>=0?'pos':'neg'}">${net>=0?'+':''}${fmtInt(net)}</div><div class="l">fluxo líquido 12m</div></div>
+          <div class="stat"><div class="n">R$ ${fmt(e.capitalMedio)}</div><div class="l">capital social médio</div></div>
+          <div class="stat"><div class="n">${(e.aberturas12m/e.ativas*100).toFixed(1).replace('.',',')}%</div><div class="l">taxa de abertura 12m</div></div>
+        </div>
+        <div class="chart" style="padding-top:0">${flowChart(e.aberturas12m,e.baixas12m)}</div>
+        <div class="porte">
+          <i style="width:${p.ME*100}%;background:var(--blue)"></i>
+          <i style="width:${p.EPP*100}%;background:var(--cyan)"></i>
+          <i style="width:${p.DEMAIS*100}%;background:var(--teal)"></i>
+        </div>
+        <div class="porte-l">
+          <span><i style="width:9px;height:9px;border-radius:2px;background:var(--blue);display:inline-block"></i> ME <b>${Math.round(p.ME*100)}%</b></span>
+          <span><i style="width:9px;height:9px;border-radius:2px;background:var(--cyan);display:inline-block"></i> EPP <b>${Math.round(p.EPP*100)}%</b></span>
+          <span><i style="width:9px;height:9px;border-radius:2px;background:var(--teal);display:inline-block"></i> Demais <b>${Math.round(p.DEMAIS*100)}%</b></span>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-h"><h3>Por classe CNAE</h3><span class="src">ativas · aberturas · baixas · líq. (12m)</span></div>
+        <table class="tbl">
+          <thead><tr><th>Classe</th><th>Ativas</th><th>Abert.</th><th>Baixas</th><th>Líq.</th></tr></thead>
+          <tbody>${cnaeRows}</tbody>
+        </table>
+      </div>
+      <div class="card">
+        <div class="card-h"><h3>Fonte setorial · ${s.fonteSetorial.nome}</h3></div>
+        <div class="callout">
+          <div class="cn">${s.fonteSetorial.n}</div>
+          <div class="cl">${s.fonteSetorial.label} <span style="color:var(--ink-3)">· ${s.fonteSetorial.asOf}</span></div>
+          <div class="cs">${s.fonteSetorial.nota}</div>
+        </div>
+      </div>
+    </div>
+  </div>`;
+}
+
+/* ============================================================ NOTÍCIAS (feed global) */
+function feedItem(f, s){
+  return `<div class="item">
+    <div class="date">${f[3]/*event*/?'':''}${f[0]}</div>
+    <div>
+      <div class="ttl">${f[2]}</div>
+      <div class="meta">
+        <span class="tag ${evClass(f[3])}">${f[3]}</span>
+        <span class="tag sect" style="color:${s.cor};border-color:${s.cor}">${s.nome}</span>
+        ${f[4] && f[4].length? `<span class="co">${f[4].join(' · ')}</span>`:''}
+        ${f[5]? `<span class="co">· ${f[5]}</span>`:''}
+        <span class="src2" style="margin-left:auto">${f[1]}</span>
+      </div>
+    </div>
+  </div>`;
+}
+function renderNoticias(){
+  const all=[];
+  DATA.setores.forEach(s=> s.feed.forEach(f=> all.push({f,s})));
+  all.sort((a,b)=> parseDate(b.f[0])-parseDate(a.f[0]));
+  const evs=['todos','M&A','Captação','IPO','Distress','Regulatório','Resultado'];
+  const sect=['todos',...DATA.setores.map(s=>s.nome)];
+  const filtered=all.filter(({f,s})=>
+    (FILTER.setor==='todos'||s.nome===FILTER.setor) &&
+    (FILTER.evento==='todos'||f[3]===FILTER.evento));
+  const items=filtered.map(({f,s})=>feedItem(f,s)).join('') || `<div class="item"><div></div><div style="color:var(--ink-3);font-size:13px">Nenhuma notícia com esses filtros.</div></div>`;
+  const sBtns=sect.map(x=>`<button class="${FILTER.setor===x?'on':''}" onclick="setFilter('setor','${x}')">${x==='todos'?'Todos os setores':x}</button>`).join('');
+  const eBtns=evs.map(x=>`<button class="${FILTER.evento===x?'on':''}" onclick="setFilter('evento','${x}')">${x==='todos'?'Todos os eventos':x}</button>`).join('');
+  return `<div class="page-head"><div><h1>Notícias</h1><p>Feed classificado por setor, tipo de evento e empresas citadas. Cada item com sua fonte.</p></div>
+    <div class="stamp">${DATA.meta.geradoEm}</div></div>
+    <div class="filters">${sBtns}</div>
+    <div class="filters">${eBtns}</div>
+    <div class="card"><div class="feed">${items}</div></div>`;
+}
+function parseDate(d){ const[dia,mes]=d.split('/').map(Number); return new Date(2026,mes-1,dia).getTime(); }
+
+/* ============================================================ router / events */
+function render(){
+  const app=$('#app');
+  if(VIEW==='termometro') app.innerHTML=renderTermometro();
+  else if(VIEW==='setores') app.innerHTML=renderSetores();
+  else if(VIEW==='noticias') app.innerHTML=renderNoticias();
+  else if(VIEW==='detalhe') app.innerHTML=renderDetalhe(CURRENT);
+  $('#foot').innerHTML = LIVE
+    ? `RadarPE 2.0 · notícias via GDELT (backfill) · estrutura via RFB/CNPJ. Fontes setoriais: ANS · INEP · MAPA/CONAB · CVM.`
+    : `RadarPE 2.0 · dados-semente ilustrativos — substituir por saída do pipeline (notícias + CNPJ/CNAE). Fontes: RFB/CNPJ · ANS · INEP · MAPA/CONAB · CVM.`;
+  [...$('#nav').children].forEach(b=> b.classList.toggle('is-active', b.dataset.view===VIEW));
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+function go(v){ VIEW=v; render(); }
+function openSetor(id){ CURRENT=id; VIEW='detalhe'; render(); }
+$('#nav').addEventListener('click',e=>{ if(e.target.dataset.view) go(e.target.dataset.view); });
+function setFilter(k,v){ FILTER[k]=v; render(); }
+
+/* theme */
+function toggleTheme(){
+  const b=document.body, cur=b.getAttribute('data-theme');
+  b.setAttribute('data-theme', cur==='dark'?'light':'dark');
+}
+
+/* modal + toast */
+function openModal(){ $('#overlay').classList.add('open'); }
+function closeModal(){ $('#overlay').classList.remove('open'); }
+$('#overlay').addEventListener('click',e=>{ if(e.target.id==='overlay') closeModal(); });
+const SUG=[]; // em produção: POST para Firebase
+function submitSug(){
+  const t=$('#sg-txt').value.trim(); if(!t){ toast('Escreva sua sugestão.'); return; }
+  SUG.push({nome:$('#sg-nome').value.trim(), txt:t, ts:Date.now()});
+  $('#sg-txt').value=''; $('#sg-nome').value=''; closeModal(); toast('Sugestão enviada. Obrigado!');
+}
+function toast(msg){ const t=$('#toast'); t.textContent=msg; t.classList.add('show'); setTimeout(()=>t.classList.remove('show'),2600); }
+
+/* init — tenta data.json (pipeline); cai para SEED se não existir.
+   Merge por setor: usa news/feed/estrutura do pipeline quando presentes,
+   e completa o que estiver vazio com a semente (ex.: estrutura antes do job CNPJ rodar). */
+function mergeData(seed, fetched){
+  const byId = Object.fromEntries(seed.setores.map(s=>[s.id,s]));
+  const full = v => v && (Array.isArray(v) ? v.length : Object.keys(v).length);
+  const setores = (fetched.setores||[]).map(f=>{
+    const s = byId[f.id] || {};
+    return {
+      id:f.id, nome:f.nome||s.nome, cor:f.cor||s.cor,
+      news:          full(f.news)          ? f.news          : s.news,
+      feed:          full(f.feed)          ? f.feed          : s.feed,
+      estrutura:     full(f.estrutura)     ? f.estrutura     : s.estrutura,
+      fonteSetorial: full(f.fonteSetorial) ? f.fonteSetorial : s.fonteSetorial,
+      teses:         full(f.teses)         ? f.teses         : s.teses,
+    };
+  });
+  return { meta:Object.assign({}, seed.meta, fetched.meta||{}),
+           setores: setores.length ? setores : seed.setores };
+}
+(async function init(){
+  try{
+    const r = await fetch('./data.json', {cache:'no-store'});
+    if(r.ok){ DATA = mergeData(SEED, await r.json()); LIVE = true; }
+  }catch(e){ /* sem data.json ainda — segue com dados-semente */ }
+  render();
+})();
+</script>
+</body>
+</html>
