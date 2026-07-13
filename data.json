@@ -1,6 +1,6 @@
 {
   "meta": {
-    "geradoEm": "08/07/2026",
+    "geradoEm": "13/07/2026",
     "janela": "últimos 30 dias",
     "baseCNPJ": "RFB/CNPJ · jan/2026",
     "fonteNoticias": "GDELT DOC API · backfill 180d"
@@ -11,18 +11,18 @@
       "nome": "Saúde",
       "cor": "#2FA98E",
       "news": {
-        "count": 16,
-        "avg90": 15,
-        "momentum": 0.07,
-        "trend": "flat",
+        "count": 35,
+        "avg90": 5,
+        "momentum": 6.0,
+        "trend": "up",
         "serie": [
           [
             "fev",
-            9
+            17
           ],
           [
             "mar",
-            43
+            0
           ],
           [
             "abr",
@@ -30,97 +30,101 @@
           ],
           [
             "mai",
-            9
+            0
           ],
           [
             "jun",
-            26
+            35
           ],
           [
             "jul",
-            0
+            16
           ]
         ],
         "eventos": {
-          "Regulatório": 15,
-          "Tese": 14,
-          "Resultado": 51,
+          "Resultado": 50,
+          "Regulatório": 24,
+          "Tese": 10,
           "Distress": 6,
-          "M&A": 1
+          "Captação": 1
         }
       },
       "feed": [
         [
-          "22/06",
-          "riotimesonline.com",
-          "Richemont Record Year Shadowed by China Risk 2026",
+          "09/07",
+          "diariodaregiao.com.br",
+          "Tribunal nega pedido da Santa Casa de Casa Branca para suspender processos",
+          "Distress",
+          [
+            "Santa Casa de Casa Branca"
+          ],
+          ""
+        ],
+        [
+          "09/07",
+          "correiodopovo.com.br",
+          "Eduardo Leite apresenta projeto do Hospital Estadual de Viamão na bolsa de valores",
           "Resultado",
           [
-            "Richemont"
+            "Hospital Estadual de Viamão"
           ],
           ""
         ],
         [
-          "22/06",
-          "jornaldebrasilia.com.br",
-          "Como as bets estão mudando o varejo e disputando o bolso do consumidor",
-          "Tese",
-          [],
+          "09/07",
+          "sonoticias.com.br",
+          "TCE revoga suspensão e libera transferência da gestão do Hospital Regional de Sinop para consórcio",
+          "Regulatório",
+          [
+            "Hospital Regional de Sinop"
+          ],
           ""
         ],
         [
-          "21/06",
-          "regiaonoroeste.com",
-          "Ministério da Saúde investirá R$ 70 milhões para expandir teleatendimento a apostadores compulsivos",
-          "Regulatório",
-          [],
-          "R$ 70 milhões"
-        ],
-        [
-          "21/06",
-          "estadao.com.br",
-          "Como a Rede DOr transforma excelência hospitalar em cuidado mais seguro",
+          "09/07",
+          "emtempo.com.br",
+          "Opy Health é reconhecida entre as melhores empresas para trabalhar",
           "Resultado",
           [
-            "Rede D'Or"
+            "Opy Health"
           ],
           ""
         ],
         [
-          "21/06",
-          "canaltech.com.br",
-          "6 ar - condicionados com filtro HEPA para ajudar você a espirrar menos no outono",
+          "09/07",
+          "tribunahoje.com",
+          "Hospital da Cidade mobiliza colaboradores em campanha de doao de sangue para reforçar estoques",
+          "Resultado",
+          [
+            "Hospital da Cidade"
+          ],
+          ""
+        ],
+        [
+          "09/07",
+          "g1.globo.com",
+          "Novo Hospital de Urgências de Goiânia : prédio custará R$ 500 milhões",
           "Resultado",
           [],
-          ""
+          "R$ 500M"
         ],
         [
-          "21/06",
-          "tribunaonline.com.br",
-          "Governo federal iniciará testes clínicos para adotar canetas emagrecedoras no SUS",
-          "Regulatório",
+          "09/07",
+          "jmonline.com.br",
+          "Doao de área de R$7 , 1 mi para Unimed deve ser votada nesta quinta em Uberaba",
+          "Resultado",
           [
-            "SUS"
+            "Unimed"
           ],
-          ""
+          "R$ 7,1M"
         ],
         [
-          "21/06",
-          "hojeemdia.com.br",
-          "Tratamento do Alzheimer avança , mas cura ainda é sonho distante",
-          "Tese",
+          "09/07",
+          "jmonline.com.br",
+          "Comdesu aprova novos projetos que somam R$ 128 milhões , com previsão de 172 empregos em Uberaba",
+          "Resultado",
           [],
-          ""
-        ],
-        [
-          "21/06",
-          "tribunaonline.com.br",
-          "Mounjaro do Paraguai apreendido no ES : especialistas alertam para os riscos",
-          "Regulatório",
-          [
-            "Mounjaro"
-          ],
-          ""
+          "R$ 128M"
         ]
       ],
       "estrutura": {},
@@ -132,10 +136,10 @@
       "nome": "Educação",
       "cor": "#123FD6",
       "news": {
-        "count": 1,
+        "count": 0,
         "avg90": 1,
-        "momentum": 0.0,
-        "trend": "flat",
+        "momentum": -1.0,
+        "trend": "down",
         "serie": [
           [
             "fev",
@@ -155,29 +159,16 @@
           ],
           [
             "jun",
-            1
+            0
           ],
           [
             "jul",
             0
           ]
         ],
-        "eventos": {
-          "Resultado": 1
-        }
+        "eventos": {}
       },
-      "feed": [
-        [
-          "23/06",
-          "tribunadonorte.com.br",
-          "Hub do Leite busca solues para fortalecer cadeia no Rio Grande do Norte",
-          "Resultado",
-          [
-            "Hub do Leite"
-          ],
-          ""
-        ]
-      ],
+      "feed": [],
       "estrutura": {},
       "fonteSetorial": {},
       "teses": []
