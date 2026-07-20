@@ -1,6 +1,6 @@
 {
   "meta": {
-    "geradoEm": "13/07/2026",
+    "geradoEm": "20/07/2026",
     "janela": "últimos 30 dias",
     "baseCNPJ": "RFB/CNPJ · jan/2026",
     "fonteNoticias": "GDELT DOC API · backfill 180d"
@@ -11,18 +11,18 @@
       "nome": "Saúde",
       "cor": "#2FA98E",
       "news": {
-        "count": 35,
-        "avg90": 5,
-        "momentum": 6.0,
+        "count": 8,
+        "avg90": 6,
+        "momentum": 0.33,
         "trend": "up",
         "serie": [
           [
             "fev",
-            17
+            0
           ],
           [
             "mar",
-            0
+            16
           ],
           [
             "abr",
@@ -34,97 +34,93 @@
           ],
           [
             "jun",
-            35
+            18
           ],
           [
             "jul",
-            16
+            8
           ]
         ],
         "eventos": {
-          "Resultado": 50,
-          "Regulatório": 24,
-          "Tese": 10,
-          "Distress": 6,
-          "Captação": 1
+          "Resultado": 26,
+          "Regulatório": 23,
+          "Tese": 6,
+          "Distress": 10,
+          "M&A": 1
         }
       },
       "feed": [
         [
-          "09/07",
-          "diariodaregiao.com.br",
-          "Tribunal nega pedido da Santa Casa de Casa Branca para suspender processos",
+          "06/07",
+          "olhardireto.com.br",
+          "Justiça nega suspensão de contrato de cardiologia estimado em R$ 1 milhão para garantir atendimento a pacientes",
+          "Regulatório",
+          [],
+          "R$ 1 milhão"
+        ],
+        [
+          "06/07",
+          "tribunademinas.com.br",
+          "Produo de frutas avança na Zona da Mata",
+          "Tese",
+          [],
+          ""
+        ],
+        [
+          "06/07",
+          "g1.globo.com",
+          "Praia Grande rompe contrato com gestora do Irmã Dulce após falhas",
           "Distress",
           [
-            "Santa Casa de Casa Branca"
+            "Irmã Dulce"
           ],
           ""
         ],
         [
-          "09/07",
-          "correiodopovo.com.br",
-          "Eduardo Leite apresenta projeto do Hospital Estadual de Viamão na bolsa de valores",
+          "05/07",
+          "conexaoto.com.br",
+          "Governador Wanderlei autoriza novas etapas das obras do Hospital Geral de Gurupi - Conexão Tocantins",
           "Resultado",
           [
-            "Hospital Estadual de Viamão"
+            "Hospital Geral de Gurupi"
           ],
           ""
         ],
         [
-          "09/07",
-          "sonoticias.com.br",
-          "TCE revoga suspensão e libera transferência da gestão do Hospital Regional de Sinop para consórcio",
+          "05/07",
+          "jornalopcao.com.br",
+          "Joel SantAnna :  Se não fossem as aes de Caiado e Daniel , hoje não estaríamos discutindo as terras raras tão intensamente e atraindo os olhares do mundo",
+          "Tese",
+          [],
+          ""
+        ],
+        [
+          "05/07",
+          "folha.uol.com.br",
+          "Empresas mudam estratégia para disputar consumidor 50+ - 04 / 07 / 2026 - Economia",
+          "Tese",
+          [],
+          ""
+        ],
+        [
+          "05/07",
+          "oglobo.globo.com",
+          "Great Place To Work : conheça as 60 melhores empresas para trabalhar no Rio",
+          "Resultado",
+          [
+            "Great Place To Work"
+          ],
+          ""
+        ],
+        [
+          "05/07",
+          "petronoticias.com.br",
+          "VAGAS PARA ESTÁGIOS MARCAM O FIM DE SEMANA NO MERCADO , MAS A PETROBRÁS DESTOA COM OPORTUNIDADES DISCRIMINATÓRIAS",
           "Regulatório",
           [
-            "Hospital Regional de Sinop"
+            "Petrobrás"
           ],
           ""
-        ],
-        [
-          "09/07",
-          "emtempo.com.br",
-          "Opy Health é reconhecida entre as melhores empresas para trabalhar",
-          "Resultado",
-          [
-            "Opy Health"
-          ],
-          ""
-        ],
-        [
-          "09/07",
-          "tribunahoje.com",
-          "Hospital da Cidade mobiliza colaboradores em campanha de doao de sangue para reforçar estoques",
-          "Resultado",
-          [
-            "Hospital da Cidade"
-          ],
-          ""
-        ],
-        [
-          "09/07",
-          "g1.globo.com",
-          "Novo Hospital de Urgências de Goiânia : prédio custará R$ 500 milhões",
-          "Resultado",
-          [],
-          "R$ 500M"
-        ],
-        [
-          "09/07",
-          "jmonline.com.br",
-          "Doao de área de R$7 , 1 mi para Unimed deve ser votada nesta quinta em Uberaba",
-          "Resultado",
-          [
-            "Unimed"
-          ],
-          "R$ 7,1M"
-        ],
-        [
-          "09/07",
-          "jmonline.com.br",
-          "Comdesu aprova novos projetos que somam R$ 128 milhões , com previsão de 172 empregos em Uberaba",
-          "Resultado",
-          [],
-          "R$ 128M"
         ]
       ],
       "estrutura": {},
@@ -136,10 +132,10 @@
       "nome": "Educação",
       "cor": "#123FD6",
       "news": {
-        "count": 0,
+        "count": 2,
         "avg90": 1,
-        "momentum": -1.0,
-        "trend": "down",
+        "momentum": 1.0,
+        "trend": "up",
         "serie": [
           [
             "fev",
@@ -159,16 +155,38 @@
           ],
           [
             "jun",
-            0
+            1
           ],
           [
             "jul",
-            0
+            1
           ]
         ],
-        "eventos": {}
+        "eventos": {
+          "Tese": 1,
+          "Resultado": 1
+        }
       },
-      "feed": [],
+      "feed": [
+        [
+          "17/07",
+          "riotimesonline.com",
+          "Smart Fit Joins Brazil Benchmark Ibovespa Stock Index",
+          "Resultado",
+          [
+            "Smart Fit"
+          ],
+          ""
+        ],
+        [
+          "23/06",
+          "tribunadonorte.com.br",
+          "Hub do Leite busca solues para fortalecer cadeia no Rio Grande do Norte",
+          "Tese",
+          [],
+          ""
+        ]
+      ],
       "estrutura": {},
       "fonteSetorial": {},
       "teses": []
@@ -185,7 +203,7 @@
         "serie": [
           [
             "fev",
-            0
+            1
           ],
           [
             "mar",
@@ -208,9 +226,22 @@
             0
           ]
         ],
-        "eventos": {}
+        "eventos": {
+          "Resultado": 1
+        }
       },
-      "feed": [],
+      "feed": [
+        [
+          "12/02",
+          "riotimesonline.com",
+          "Banco do Brasil 4Q25 : The Agro Storm Abates but the Scars Run",
+          "Resultado",
+          [
+            "Banco do Brasil"
+          ],
+          ""
+        ]
+      ],
       "estrutura": {},
       "fonteSetorial": {},
       "teses": []
