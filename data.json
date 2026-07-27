@@ -1,6 +1,6 @@
 {
   "meta": {
-    "geradoEm": "20/07/2026",
+    "geradoEm": "27/07/2026",
     "janela": "últimos 30 dias",
     "baseCNPJ": "RFB/CNPJ · jan/2026",
     "fonteNoticias": "GDELT DOC API · backfill 180d"
@@ -11,10 +11,10 @@
       "nome": "Saúde",
       "cor": "#2FA98E",
       "news": {
-        "count": 8,
-        "avg90": 6,
-        "momentum": 0.33,
-        "trend": "up",
+        "count": 0,
+        "avg90": 20,
+        "momentum": -1.0,
+        "trend": "down",
         "serie": [
           [
             "fev",
@@ -22,103 +22,111 @@
           ],
           [
             "mar",
-            16
+            10
           ],
           [
             "abr",
-            0
+            10
           ],
           [
             "mai",
-            0
+            49
           ],
           [
             "jun",
-            18
+            0
           ],
           [
             "jul",
-            8
+            0
           ]
         ],
         "eventos": {
-          "Resultado": 26,
-          "Regulatório": 23,
-          "Tese": 6,
-          "Distress": 10,
+          "Resultado": 38,
+          "Regulatório": 19,
+          "Distress": 7,
+          "Tese": 4,
           "M&A": 1
         }
       },
       "feed": [
         [
-          "06/07",
-          "olhardireto.com.br",
-          "Justiça nega suspensão de contrato de cardiologia estimado em R$ 1 milhão para garantir atendimento a pacientes",
-          "Regulatório",
-          [],
-          "R$ 1 milhão"
-        ],
-        [
-          "06/07",
-          "tribunademinas.com.br",
-          "Produo de frutas avança na Zona da Mata",
-          "Tese",
-          [],
+          "21/05",
+          "folha.uol.com.br",
+          "C6 Fest : Beirut retorna ao país após mais de 15 anos - 20 / 05 / 2026 - Ilustrada",
+          "Resultado",
+          [
+            "C6 Bank"
+          ],
           ""
         ],
         [
-          "06/07",
-          "g1.globo.com",
-          "Praia Grande rompe contrato com gestora do Irmã Dulce após falhas",
+          "21/05",
+          "jc.uol.com.br",
+          "Em dois anos , defesa da Transnordestina se resumiu a documento de Suape que não chegou ao TCU antes da recomendao de parar a obra",
           "Distress",
           [
-            "Irmã Dulce"
+            "Transnordestina",
+            "Suape"
           ],
           ""
         ],
         [
-          "05/07",
-          "conexaoto.com.br",
-          "Governador Wanderlei autoriza novas etapas das obras do Hospital Geral de Gurupi - Conexão Tocantins",
-          "Resultado",
-          [
-            "Hospital Geral de Gurupi"
-          ],
-          ""
-        ],
-        [
-          "05/07",
-          "jornalopcao.com.br",
-          "Joel SantAnna :  Se não fossem as aes de Caiado e Daniel , hoje não estaríamos discutindo as terras raras tão intensamente e atraindo os olhares do mundo",
-          "Tese",
-          [],
-          ""
-        ],
-        [
-          "05/07",
-          "folha.uol.com.br",
-          "Empresas mudam estratégia para disputar consumidor 50+ - 04 / 07 / 2026 - Economia",
-          "Tese",
-          [],
-          ""
-        ],
-        [
-          "05/07",
-          "oglobo.globo.com",
-          "Great Place To Work : conheça as 60 melhores empresas para trabalhar no Rio",
-          "Resultado",
-          [
-            "Great Place To Work"
-          ],
-          ""
-        ],
-        [
-          "05/07",
-          "petronoticias.com.br",
-          "VAGAS PARA ESTÁGIOS MARCAM O FIM DE SEMANA NO MERCADO , MAS A PETROBRÁS DESTOA COM OPORTUNIDADES DISCRIMINATÓRIAS",
+          "21/05",
+          "tecmundo.com.br",
+          "Cirurgia robótica ganha cobertura obrigatória nos planos de saúde",
           "Regulatório",
+          [],
+          ""
+        ],
+        [
+          "21/05",
+          "faxaju.com.br",
+          "4º Congresso Assistencial da Rede Primavera reúne palestrantes de várias partes do país",
+          "Resultado",
           [
-            "Petrobrás"
+            "Rede Primavera"
+          ],
+          ""
+        ],
+        [
+          "21/05",
+          "g1.globo.com",
+          "Hospital Alvorada Jacareí retoma atendimentos na UTI e adulto",
+          "Resultado",
+          [
+            "Hospital Alvorada Jacareí"
+          ],
+          ""
+        ],
+        [
+          "21/05",
+          "faxaju.com.br",
+          "Hemose mobiliza doares para reequilibrar estoque de sangue neste sábado",
+          "Resultado",
+          [
+            "Hemose"
+          ],
+          ""
+        ],
+        [
+          "21/05",
+          "g1.globo.com",
+          "Hospital Veterinário de Florianópolis supera 3 , 4 mil procedimentos em um mês",
+          "Resultado",
+          [
+            "Hospital Veterinário de Florianópolis"
+          ],
+          ""
+        ],
+        [
+          "21/05",
+          "brazilsun.com",
+          "IKS Health Announces Agreement to Acquire Trubridge to Strengthen Access to Rural and Community - Based Healthcare",
+          "M&A",
+          [
+            "IKS Health",
+            "Trubridge"
           ],
           ""
         ]
@@ -132,10 +140,10 @@
       "nome": "Educação",
       "cor": "#123FD6",
       "news": {
-        "count": 2,
+        "count": 1,
         "avg90": 1,
-        "momentum": 1.0,
-        "trend": "up",
+        "momentum": 0.0,
+        "trend": "flat",
         "serie": [
           [
             "fev",
@@ -155,7 +163,7 @@
           ],
           [
             "jun",
-            1
+            0
           ],
           [
             "jul",
@@ -163,7 +171,6 @@
           ]
         ],
         "eventos": {
-          "Tese": 1,
           "Resultado": 1
         }
       },
@@ -177,14 +184,6 @@
             "Smart Fit"
           ],
           ""
-        ],
-        [
-          "23/06",
-          "tribunadonorte.com.br",
-          "Hub do Leite busca solues para fortalecer cadeia no Rio Grande do Norte",
-          "Tese",
-          [],
-          ""
         ]
       ],
       "estrutura": {},
@@ -196,14 +195,14 @@
       "nome": "Agro",
       "cor": "#6DBE45",
       "news": {
-        "count": 0,
+        "count": 1,
         "avg90": 1,
-        "momentum": -1.0,
-        "trend": "down",
+        "momentum": 0.0,
+        "trend": "flat",
         "serie": [
           [
             "fev",
-            1
+            0
           ],
           [
             "mar",
@@ -211,7 +210,7 @@
           ],
           [
             "abr",
-            0
+            1
           ],
           [
             "mai",
@@ -223,21 +222,31 @@
           ],
           [
             "jul",
-            0
+            1
           ]
         ],
         "eventos": {
-          "Resultado": 1
+          "Resultado": 2
         }
       },
       "feed": [
         [
-          "12/02",
+          "22/07",
           "riotimesonline.com",
-          "Banco do Brasil 4Q25 : The Agro Storm Abates but the Scars Run",
+          "Cementos Pacasmayo Profit Jumps 58 % on Peru Rebound",
           "Resultado",
           [
-            "Banco do Brasil"
+            "Cementos Pacasmayo"
+          ],
+          ""
+        ],
+        [
+          "28/04",
+          "riotimesonline.com",
+          "Embraer Q1 2026 : $32 . 1B Backlog Record",
+          "Resultado",
+          [
+            "Embraer"
           ],
           ""
         ]
