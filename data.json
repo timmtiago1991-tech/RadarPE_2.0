@@ -1,6 +1,6 @@
 {
   "meta": {
-    "geradoEm": "03/08/2026",
+    "geradoEm": "10/08/2026",
     "janela": "últimos 30 dias",
     "baseCNPJ": "RFB/CNPJ · jan/2026",
     "fonteNoticias": "GDELT DOC API · backfill 180d"
@@ -11,22 +11,22 @@
       "nome": "Saúde",
       "cor": "#2FA98E",
       "news": {
-        "count": 0,
-        "avg90": 160,
-        "momentum": -1.0,
-        "trend": "down",
+        "count": 489,
+        "avg90": 80,
+        "momentum": 5.11,
+        "trend": "up",
         "serie": [
           [
             "mar",
-            489
+            246
           ],
           [
             "abr",
-            479
+            0
           ],
           [
             "mai",
-            0
+            240
           ],
           [
             "jun",
@@ -34,78 +34,78 @@
           ],
           [
             "jul",
-            0
+            243
           ],
           [
             "ago",
-            0
+            246
           ]
         ],
         "eventos": {
-          "Tese": 1454
+          "Tese": 1220
         }
       },
       "feed": [
         [
-          "23/04",
-          "oglobo.globo.com",
-          "Defesa de Vorcaro aciona Mendonça e pede exames médicos em hospital",
-          "Tese",
-          [],
-          ""
-        ],
-        [
-          "23/04",
-          "noticiasdatv.uol.com.br",
-          "Resumo de Corao Acelerado : Briga de Alaorzinho e Janete termina em gritaria e expulsão",
-          "Tese",
-          [],
-          ""
-        ],
-        [
-          "23/04",
-          "midianews.com.br",
-          "MidiaNews | Mulher trans é encontrada desacordada e morre em hospital de MT",
-          "Tese",
-          [],
-          ""
-        ],
-        [
-          "23/04",
+          "06/08",
           "g1.globo.com",
-          "Polícia identifica jovens que suspeitos de agredir idoso em São Roque",
+          "Justiça decreta prisão preventiva de mãe suspeita de matar filha de 1 ano e 6 meses no MA",
           "Tese",
           [],
           ""
         ],
         [
-          "23/04",
-          "jornalcruzeiro.com.br",
-          "Babá suspeita de agredir bebê tem prisão temporária decretada e é considerada foragida em Sorocaba",
+          "06/08",
+          "ultimosegundo.ig.com.br",
+          "MDB oficializa Vilela à reeleio em GO com Luiz do Carmo de vice",
           "Tese",
           [],
           ""
         ],
         [
-          "23/04",
-          "agorams.com.br",
-          "UPA atende 2 . 069 pacientes durante feriadão e Hospital da Vida faz 182 internaes",
+          "06/08",
+          "novoeste.com",
+          "Câncer de estômago é cada vez mais comum em adultos jovens",
           "Tese",
           [],
           ""
         ],
         [
-          "23/04",
-          "oimparcial.com.br",
-          "Mãe denuncia negligência no Hospital da Criança após morte de bebê com bronquiolite",
+          "06/08",
+          "folha.uol.com.br",
+          "Japeri : mulher morre após espancamento ao proteger a filha - 05 / 08 / 2026 - Cotidiano",
           "Tese",
           [],
           ""
         ],
         [
-          "23/04",
-          "tribunahoje.com",
-          "Acumulador compulsivo é internado e Prefeitura de Delmiro obrigada a higienizar o imóvel",
+          "06/08",
+          "dsvc.com.br",
+          "Câmara retoma sessões ordinárias com balanço do primeiro semestre",
+          "Tese",
+          [],
+          ""
+        ],
+        [
+          "06/08",
+          "dsvc.com.br",
+          "MPBA denuncia responsável por instituio de idosas",
+          "Tese",
+          [],
+          ""
+        ],
+        [
+          "06/08",
+          "diariodonordeste.verdesmares.com.br",
+          "Quem é Perez Hilton , o  blogueiro mais odiado de Hollywood  internado após live com automutilao - Mundo",
+          "Tese",
+          [],
+          ""
+        ],
+        [
+          "06/08",
+          "ilustrado.com.br",
+          "Briga entre estudantes mobiliza Polícia Militar em colégio de Iporã",
           "Tese",
           [],
           ""
@@ -120,14 +120,14 @@
       "nome": "Educação",
       "cor": "#123FD6",
       "news": {
-        "count": 1,
+        "count": 0,
         "avg90": 1,
-        "momentum": 0.0,
-        "trend": "flat",
+        "momentum": -1.0,
+        "trend": "down",
         "serie": [
           [
             "mar",
-            2
+            0
           ],
           [
             "abr",
@@ -135,11 +135,11 @@
           ],
           [
             "mai",
-            2
+            0
           ],
           [
             "jun",
-            0
+            3
           ],
           [
             "jul",
@@ -151,62 +151,38 @@
           ]
         ],
         "eventos": {
-          "Tese": 7
+          "Tese": 4
         }
       },
       "feed": [
         [
-          "29/07",
-          "brazilsun.com",
-          "SwiftPAL from ConveGenius . AI in India Named in Top 25 Shortlists for Second Annual Global EdTech Prize",
+          "10/07",
+          "jornaldebrasilia.com.br",
+          "Plano Piloto terá ao de acolhimento a pessoas em situao de rua",
           "Tese",
           [],
           ""
         ],
         [
-          "05/05",
-          "racismoambiental.net.br",
-          "Umbanda : Quando a fé é resistência política - Combate Racismo Ambiental",
-          "Tese",
-          [],
-          ""
-        ],
-        [
-          "03/05",
-          "agorams.com.br",
-          "Com apoio do Governo de MS , Taboadão 2026 movimenta turismo , cultura e economia da região",
-          "Tese",
-          [],
-          ""
-        ],
-        [
-          "11/03",
-          "rondoniadinamica.com",
-          "Escola Santo Antônio I volta a ter aulas nesta quarta - feira ( 11 )",
-          "Tese",
-          [],
-          ""
-        ],
-        [
-          "06/03",
-          "jc.uol.com.br",
-          "Início do ano letivo em Goiana é marcado por falta de professores e problemas de infraestrutura",
-          "Tese",
-          [],
-          ""
-        ],
-        [
-          "05/02",
+          "16/06",
           "g1.globo.com",
-          "Mais de 200 vagas em oficinas de culinária são ofertadas no AC",
+          "Festa dos Visitantes Parintins : como garantir sua pulseira",
           "Tese",
           [],
           ""
         ],
         [
-          "05/02",
-          "g1.globo.com",
-          "Pré - carnaval , blocos tradicionais e mais ; confira agenda cultural",
+          "16/06",
+          "mundorama.net",
+          "French neocolonialism , the presence of French companies in Africa and the rising of emerging powers",
+          "Tese",
+          [],
+          ""
+        ],
+        [
+          "10/06",
+          "riotimesonline.com",
+          "Rio de Janeiro Daily Brief for Wednesday , June 10 , 2026",
           "Tese",
           [],
           ""
@@ -221,18 +197,18 @@
       "nome": "Agro",
       "cor": "#6DBE45",
       "news": {
-        "count": 4,
+        "count": 1,
         "avg90": 1,
-        "momentum": 3.0,
-        "trend": "up",
+        "momentum": 0.0,
+        "trend": "flat",
         "serie": [
           [
             "mar",
-            0
+            2
           ],
           [
             "abr",
-            0
+            3
           ],
           [
             "mai",
@@ -240,82 +216,66 @@
           ],
           [
             "jun",
-            4
+            0
           ],
           [
             "jul",
-            4
+            0
           ],
           [
             "ago",
-            0
+            1
           ]
         ],
         "eventos": {
-          "Tese": 9
+          "Tese": 6
         }
       },
       "feed": [
         [
-          "24/07",
+          "04/08",
           "riotimesonline.com",
-          "Guadalajara October Festivals 2026 : 31 Days of Music",
+          "Colombian Mato Grosso : Espriella Agro Plan",
           "Tese",
           [],
           ""
         ],
         [
-          "22/07",
+          "28/04",
           "riotimesonline.com",
-          "Cementos Pacasmayo Profit Jumps 58 % on Peru Rebound",
+          "Embraer Q1 2026 : $32 . 1B Backlog Record",
           "Tese",
           [],
           ""
         ],
         [
-          "07/07",
+          "27/04",
           "riotimesonline.com",
-          "Nigeria Palm Oil Boom : Presco and Okomu Post Record Profits",
+          "Colombia Agro Exports Jump from 20 % to 30 %",
           "Tese",
           [],
           ""
         ],
         [
-          "07/07",
+          "23/04",
           "riotimesonline.com",
-          "Sucrivoire Stock Up 190 %: BRVM Best Performer of 2026",
+          "Vorcaro Titan Surfaces in London After BC Freeze",
           "Tese",
           [],
           ""
         ],
         [
-          "30/06",
+          "31/03",
           "riotimesonline.com",
-          "USMCA Review Begins a Ten - Year Countdown to Possible Exit",
+          "Merval Argentina Today Surges 2 . 6 % on YPF Rio Times",
           "Tese",
           [],
           ""
         ],
         [
-          "25/06",
+          "25/03",
           "riotimesonline.com",
-          "JPMorgan TIGRE Plan for Colombia , Explained",
-          "Tese",
-          [],
-          ""
-        ],
-        [
-          "24/06",
-          "brazilsun.com",
-          "India - Latin America Trade to Reach USD 100 Billion by 2030 from USD 50 Billion Currently : Uruguay Ambassador",
-          "Tese",
-          [],
-          ""
-        ],
-        [
-          "11/06",
-          "brazilsun.com",
-          "Assam : Youth turns scientific Eri silk and mushroom farming into lakhs",
+          "Boa Safra Earnings : Q4 Loss as Seed Margins Fall",
           "Tese",
           [],
           ""
