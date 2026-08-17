@@ -1,6 +1,6 @@
 {
   "meta": {
-    "geradoEm": "10/08/2026",
+    "geradoEm": "17/08/2026",
     "janela": "últimos 30 dias",
     "baseCNPJ": "RFB/CNPJ · jan/2026",
     "fonteNoticias": "GDELT DOC API · backfill 180d"
@@ -11,101 +11,101 @@
       "nome": "Saúde",
       "cor": "#2FA98E",
       "news": {
-        "count": 489,
-        "avg90": 80,
-        "momentum": 5.11,
+        "count": 241,
+        "avg90": 163,
+        "momentum": 0.48,
         "trend": "up",
         "serie": [
           [
             "mar",
-            246
-          ],
-          [
-            "abr",
-            0
-          ],
-          [
-            "mai",
             240
           ],
           [
-            "jun",
+            "abr",
+            244
+          ],
+          [
+            "mai",
             0
           ],
           [
+            "jun",
+            489
+          ],
+          [
             "jul",
-            243
+            241
           ],
           [
             "ago",
-            246
+            0
           ]
         ],
         "eventos": {
-          "Tese": 1220
+          "Tese": 1214
         }
       },
       "feed": [
         [
-          "06/08",
-          "g1.globo.com",
-          "Justiça decreta prisão preventiva de mãe suspeita de matar filha de 1 ano e 6 meses no MA",
+          "30/07",
+          "jc.uol.com.br",
+          "Japão : mortos chegam a 18 após terremoto em Kumamoto ; buscas seguem em meio ao calor",
           "Tese",
           [],
           ""
         ],
         [
-          "06/08",
-          "ultimosegundo.ig.com.br",
-          "MDB oficializa Vilela à reeleio em GO com Luiz do Carmo de vice",
+          "30/07",
+          "em.com.br",
+          "Justiça suspende edital para construo de complexo hospitalar em BH",
           "Tese",
           [],
           ""
         ],
         [
-          "06/08",
-          "novoeste.com",
-          "Câncer de estômago é cada vez mais comum em adultos jovens",
+          "30/07",
+          "tribunadonorte.com.br",
+          "Teto desaba em sala de recuperao de hospital no Recife e atinge paciente recém - operada",
           "Tese",
           [],
           ""
         ],
         [
-          "06/08",
-          "folha.uol.com.br",
-          "Japeri : mulher morre após espancamento ao proteger a filha - 05 / 08 / 2026 - Cotidiano",
+          "30/07",
+          "arede.info",
+          "Morre homem brutalmente espancado durante festa em clube de Ponta Grossa",
           "Tese",
           [],
           ""
         ],
         [
-          "06/08",
-          "dsvc.com.br",
-          "Câmara retoma sessões ordinárias com balanço do primeiro semestre",
+          "30/07",
+          "revistacrescer.globo.com",
+          "Intuio materna tem explicao científica e neurologista revela o que acontece no cérebro das mães",
           "Tese",
           [],
           ""
         ],
         [
-          "06/08",
-          "dsvc.com.br",
-          "MPBA denuncia responsável por instituio de idosas",
+          "30/07",
+          "tnonline.uol.com.br",
+          "Motorista fica ferido em acidente de caminhão na PR - 862",
           "Tese",
           [],
           ""
         ],
         [
-          "06/08",
-          "diariodonordeste.verdesmares.com.br",
-          "Quem é Perez Hilton , o  blogueiro mais odiado de Hollywood  internado após live com automutilao - Mundo",
+          "30/07",
+          "gazetadopovo.com.br",
+          "O que se sabe sobre o bebê dado como morto que voltou à vida",
           "Tese",
           [],
           ""
         ],
         [
-          "06/08",
-          "ilustrado.com.br",
-          "Briga entre estudantes mobiliza Polícia Militar em colégio de Iporã",
+          "30/07",
+          "acidadeon.com",
+          "Ventania em São Paulo desvia oito voos para Viracopos e afeta operaes nos aeroportos da capital",
           "Tese",
           [],
           ""
@@ -120,10 +120,10 @@
       "nome": "Educação",
       "cor": "#123FD6",
       "news": {
-        "count": 0,
-        "avg90": 1,
-        "momentum": -1.0,
-        "trend": "down",
+        "count": 3,
+        "avg90": 2,
+        "momentum": 0.5,
+        "trend": "up",
         "serie": [
           [
             "mar",
@@ -135,11 +135,11 @@
           ],
           [
             "mai",
-            0
+            3
           ],
           [
             "jun",
-            3
+            4
           ],
           [
             "jul",
@@ -147,42 +147,74 @@
           ],
           [
             "ago",
-            0
+            2
           ]
         ],
         "eventos": {
-          "Tese": 4
+          "Tese": 10
         }
       },
       "feed": [
         [
-          "10/07",
-          "jornaldebrasilia.com.br",
-          "Plano Piloto terá ao de acolhimento a pessoas em situao de rua",
-          "Tese",
-          [],
-          ""
-        ],
-        [
-          "16/06",
-          "g1.globo.com",
-          "Festa dos Visitantes Parintins : como garantir sua pulseira",
-          "Tese",
-          [],
-          ""
-        ],
-        [
-          "16/06",
-          "mundorama.net",
-          "French neocolonialism , the presence of French companies in Africa and the rising of emerging powers",
-          "Tese",
-          [],
-          ""
-        ],
-        [
-          "10/06",
+          "04/08",
           "riotimesonline.com",
-          "Rio de Janeiro Daily Brief for Wednesday , June 10 , 2026",
+          "Ivan Lins , Blitz Lead Curitiba Culture Week",
+          "Tese",
+          [],
+          ""
+        ],
+        [
+          "03/08",
+          "riotimesonline.com",
+          "Rio Daily Brief 3 Aug 2026 : Weather , Events & Markets",
+          "Tese",
+          [],
+          ""
+        ],
+        [
+          "29/07",
+          "brazilsun.com",
+          "SwiftPAL from ConveGenius . AI in India Named in Top 25 Shortlists for Second Annual Global EdTech Prize",
+          "Tese",
+          [],
+          ""
+        ],
+        [
+          "09/06",
+          "acritica.net",
+          "Mural Postal Campão leva arte urbana a Campo Grande",
+          "Tese",
+          [],
+          ""
+        ],
+        [
+          "08/06",
+          "record.r7.com",
+          "Grupo ND promove plantio e doao de 630 mudas nativas durante a Semana do Meio Ambiente",
+          "Tese",
+          [],
+          ""
+        ],
+        [
+          "07/06",
+          "riotimesonline.com",
+          "Rio de Janeiro Daily Brief for Sunday , June 7 , 2026",
+          "Tese",
+          [],
+          ""
+        ],
+        [
+          "04/06",
+          "riotimesonline.com",
+          "Rio de Janeiro Daily Brief for Thursday , June 4 , 2026",
+          "Tese",
+          [],
+          ""
+        ],
+        [
+          "19/05",
+          "riotimesonline.com",
+          "International Schools in Brazil for Expats : 2026 Guide",
           "Tese",
           [],
           ""
@@ -197,18 +229,18 @@
       "nome": "Agro",
       "cor": "#6DBE45",
       "news": {
-        "count": 1,
+        "count": 4,
         "avg90": 1,
-        "momentum": 0.0,
-        "trend": "flat",
+        "momentum": 3.0,
+        "trend": "up",
         "serie": [
           [
             "mar",
-            2
+            1
           ],
           [
             "abr",
-            3
+            0
           ],
           [
             "mai",
@@ -216,66 +248,82 @@
           ],
           [
             "jun",
-            0
+            1
           ],
           [
             "jul",
-            0
+            2
           ],
           [
             "ago",
-            1
+            4
           ]
         ],
         "eventos": {
-          "Tese": 6
+          "Tese": 8
         }
       },
       "feed": [
         [
-          "04/08",
+          "14/08",
           "riotimesonline.com",
-          "Colombian Mato Grosso : Espriella Agro Plan",
+          "El Salvador - Belize Trade Deal Opens 400 Tariff Lines",
           "Tese",
           [],
           ""
         ],
         [
-          "28/04",
+          "13/08",
           "riotimesonline.com",
-          "Embraer Q1 2026 : $32 . 1B Backlog Record",
+          "Vaca Muerta Electric Fracturing : YPF and Halliburton Deploy Zeus",
           "Tese",
           [],
           ""
         ],
         [
-          "27/04",
+          "10/08",
           "riotimesonline.com",
-          "Colombia Agro Exports Jump from 20 % to 30 %",
+          "Nigeria Turns to Asia for Post - Harvest Loss Solutions",
           "Tese",
           [],
           ""
         ],
         [
-          "23/04",
+          "07/08",
           "riotimesonline.com",
-          "Vorcaro Titan Surfaces in London After BC Freeze",
+          "Rwanda Suspends 14 Tanzanian Alcohol Brands in Safety Crackdown",
           "Tese",
           [],
           ""
         ],
         [
-          "31/03",
+          "12/07",
           "riotimesonline.com",
-          "Merval Argentina Today Surges 2 . 6 % on YPF Rio Times",
+          "Cameroon Sugar Mill : $100 Million Challenge to Castel",
           "Tese",
           [],
           ""
         ],
         [
-          "25/03",
+          "09/07",
           "riotimesonline.com",
-          "Boa Safra Earnings : Q4 Loss as Seed Margins Fall",
+          "Brazil Fuel Subsidy : $4 . 8bn Backed as Oil Truce Collapses",
+          "Tese",
+          [],
+          ""
+        ],
+        [
+          "11/06",
+          "brazilsun.com",
+          "Assam : Youth turns scientific Eri silk and mushroom farming into lakhs",
+          "Tese",
+          [],
+          ""
+        ],
+        [
+          "13/03",
+          "riotimesonline.com",
+          "Peru Overtakes Chile in Agricultural Exports Rio Times",
           "Tese",
           [],
           ""
