@@ -1,6 +1,6 @@
 {
   "meta": {
-    "geradoEm": "17/08/2026",
+    "geradoEm": "24/08/2026",
     "janela": "últimos 30 dias",
     "baseCNPJ": "RFB/CNPJ · jan/2026",
     "fonteNoticias": "GDELT DOC API · backfill 180d"
@@ -11,18 +11,18 @@
       "nome": "Saúde",
       "cor": "#2FA98E",
       "news": {
-        "count": 241,
-        "avg90": 163,
-        "momentum": 0.48,
+        "count": 727,
+        "avg90": 1,
+        "momentum": 726.0,
         "trend": "up",
         "serie": [
           [
             "mar",
-            240
+            246
           ],
           [
             "abr",
-            244
+            478
           ],
           [
             "mai",
@@ -30,82 +30,82 @@
           ],
           [
             "jun",
-            489
+            0
           ],
           [
             "jul",
-            241
+            0
           ],
           [
             "ago",
-            0
+            727
           ]
         ],
         "eventos": {
-          "Tese": 1214
+          "Tese": 1451
         }
       },
       "feed": [
         [
-          "30/07",
-          "jc.uol.com.br",
-          "Japão : mortos chegam a 18 após terremoto em Kumamoto ; buscas seguem em meio ao calor",
+          "20/08",
+          "folha.uol.com.br",
+          "Boca Rosa : O que é pielonefrite e quais os sintomas - 19 / 08 / 2026 - Equilíbrio e Saúde",
           "Tese",
           [],
           ""
         ],
         [
-          "30/07",
-          "em.com.br",
-          "Justiça suspende edital para construo de complexo hospitalar em BH",
+          "20/08",
+          "conjur.com.br",
+          "Induo de parto sem consentimento configura violência obstétrica",
           "Tese",
           [],
           ""
         ],
         [
-          "30/07",
-          "tribunadonorte.com.br",
-          "Teto desaba em sala de recuperao de hospital no Recife e atinge paciente recém - operada",
+          "20/08",
+          "g1.globo.com",
+          "Paciente de 60 anos desaparece de hospital em SP antes de cirurgia e é encontrado uma semana depois a 50 km de distância",
           "Tese",
           [],
           ""
         ],
         [
-          "30/07",
-          "arede.info",
-          "Morre homem brutalmente espancado durante festa em clube de Ponta Grossa",
+          "20/08",
+          "odia.ig.com.br",
+          "Explosão em prédio residencial de Copacabana deixa feridos | Rio de Janeiro",
           "Tese",
           [],
           ""
         ],
         [
-          "30/07",
-          "revistacrescer.globo.com",
-          "Intuio materna tem explicao científica e neurologista revela o que acontece no cérebro das mães",
+          "20/08",
+          "revistaforum.com.br",
+          "Apresentadora acaba com Moro após senador inventar hospital",
           "Tese",
           [],
           ""
         ],
         [
-          "30/07",
-          "tnonline.uol.com.br",
-          "Motorista fica ferido em acidente de caminhão na PR - 862",
+          "20/08",
+          "revistaquem.globo.com",
+          "Morre Antônio Calixto , cover de Junior que participou de documentário de Sandy & Junior",
           "Tese",
           [],
           ""
         ],
         [
-          "30/07",
-          "gazetadopovo.com.br",
-          "O que se sabe sobre o bebê dado como morto que voltou à vida",
+          "20/08",
+          "folha.uol.com.br",
+          "Grávida morre após ser agredida por companheiro em SP - 19 / 08 / 2026 - Cotidiano",
           "Tese",
           [],
           ""
         ],
         [
-          "30/07",
-          "acidadeon.com",
-          "Ventania em São Paulo desvia oito voos para Viracopos e afeta operaes nos aeroportos da capital",
+          "20/08",
+          "oprogressonet.com",
+          "Em debate , Dorinha garante Hospital Geral de Araguaína em 2027 e detalha propostas para a saúde",
           "Tese",
           [],
           ""
@@ -120,10 +120,10 @@
       "nome": "Educação",
       "cor": "#123FD6",
       "news": {
-        "count": 3,
-        "avg90": 2,
-        "momentum": 0.5,
-        "trend": "up",
+        "count": 4,
+        "avg90": 4,
+        "momentum": 0.0,
+        "trend": "flat",
         "serie": [
           [
             "mar",
@@ -135,86 +135,86 @@
           ],
           [
             "mai",
-            3
+            2
           ],
           [
             "jun",
-            4
+            3
           ],
           [
             "jul",
-            1
+            7
           ],
           [
             "ago",
-            2
+            5
           ]
         ],
         "eventos": {
-          "Tese": 10
+          "Tese": 17
         }
       },
       "feed": [
         [
-          "04/08",
+          "24/08",
+          "otempo.com.br",
+          "Ouro Fino abre licitao para compra de equipamentos para a Escola Esperança e Vida",
+          "Tese",
+          [],
+          ""
+        ],
+        [
+          "21/08",
+          "tribunadonorte.com.br",
+          "RN receberá supercomputador de alto desempenho avaliado em cerca de R$ 1 , 06 bilhão",
+          "Tese",
+          [],
+          ""
+        ],
+        [
+          "21/08",
+          "fatimanews.com.br",
+          "Vila Rica : Escola José do Patrocínio conquista prêmio para a Educao de Vicentina",
+          "Tese",
+          [],
+          ""
+        ],
+        [
+          "20/08",
           "riotimesonline.com",
-          "Ivan Lins , Blitz Lead Curitiba Culture Week",
+          "Mostra de Circo do Recife : Free Final Weekend",
           "Tese",
           [],
           ""
         ],
         [
-          "03/08",
-          "riotimesonline.com",
-          "Rio Daily Brief 3 Aug 2026 : Weather , Events & Markets",
+          "19/08",
+          "regiaonoroeste.com",
+          "Secretaria de Agricultura de Fernandópolis promove roda de conversa sobre combate à violência contra a mulher",
           "Tese",
           [],
           ""
         ],
         [
-          "29/07",
-          "brazilsun.com",
-          "SwiftPAL from ConveGenius . AI in India Named in Top 25 Shortlists for Second Annual Global EdTech Prize",
+          "20/07",
+          "diariodigital.com.br",
+          "Assaltantes são presos após tentativa de roubo a joalheria em São Gabriel do Oeste",
           "Tese",
           [],
           ""
         ],
         [
-          "09/06",
-          "acritica.net",
-          "Mural Postal Campão leva arte urbana a Campo Grande",
+          "19/07",
+          "diariodosudoeste.com.br",
+          "Primeira Escola Diocesana para Ministros Auxiliares",
           "Tese",
           [],
           ""
         ],
         [
-          "08/06",
-          "record.r7.com",
-          "Grupo ND promove plantio e doao de 630 mudas nativas durante a Semana do Meio Ambiente",
-          "Tese",
-          [],
-          ""
-        ],
-        [
-          "07/06",
-          "riotimesonline.com",
-          "Rio de Janeiro Daily Brief for Sunday , June 7 , 2026",
-          "Tese",
-          [],
-          ""
-        ],
-        [
-          "04/06",
-          "riotimesonline.com",
-          "Rio de Janeiro Daily Brief for Thursday , June 4 , 2026",
-          "Tese",
-          [],
-          ""
-        ],
-        [
-          "19/05",
-          "riotimesonline.com",
-          "International Schools in Brazil for Expats : 2026 Guide",
+          "18/07",
+          "tribunadonorte.com.br",
+          "O queijo de manteiga é um Feito Potiguar - Tribuna do Norte",
           "Tese",
           [],
           ""
@@ -229,14 +229,14 @@
       "nome": "Agro",
       "cor": "#6DBE45",
       "news": {
-        "count": 4,
-        "avg90": 1,
-        "momentum": 3.0,
-        "trend": "up",
+        "count": 0,
+        "avg90": 4,
+        "momentum": -1.0,
+        "trend": "down",
         "serie": [
           [
             "mar",
-            1
+            0
           ],
           [
             "abr",
@@ -252,46 +252,62 @@
           ],
           [
             "jul",
-            2
+            10
           ],
           [
             "ago",
-            4
+            0
           ]
         ],
         "eventos": {
-          "Tese": 8
+          "Tese": 11
         }
       },
       "feed": [
         [
-          "14/08",
+          "24/07",
           "riotimesonline.com",
-          "El Salvador - Belize Trade Deal Opens 400 Tariff Lines",
+          "Guadalajara October Festivals 2026 : 31 Days of Music",
           "Tese",
           [],
           ""
         ],
         [
-          "13/08",
+          "22/07",
           "riotimesonline.com",
-          "Vaca Muerta Electric Fracturing : YPF and Halliburton Deploy Zeus",
+          "Cementos Pacasmayo Profit Jumps 58 % on Peru Rebound",
           "Tese",
           [],
           ""
         ],
         [
-          "10/08",
+          "18/07",
           "riotimesonline.com",
-          "Nigeria Turns to Asia for Post - Harvest Loss Solutions",
+          "IMF and Washington back Colombia fiscal - deficit fix plan",
           "Tese",
           [],
           ""
         ],
         [
-          "07/08",
+          "18/07",
           "riotimesonline.com",
-          "Rwanda Suspends 14 Tanzanian Alcohol Brands in Safety Crackdown",
+          "Oaxaca Mezcal Fair Opens with Free Shuttles for Guelaguetza 2026",
+          "Tese",
+          [],
+          ""
+        ],
+        [
+          "16/07",
+          "riotimesonline.com",
+          "Africa moves up the value chain will the West keep pace ?",
+          "Tese",
+          [],
+          ""
+        ],
+        [
+          "16/07",
+          "riotimesonline.com",
+          "Strait of Hormuz Crisis : Latin America Energy Leverage",
           "Tese",
           [],
           ""
@@ -308,22 +324,6 @@
           "09/07",
           "riotimesonline.com",
           "Brazil Fuel Subsidy : $4 . 8bn Backed as Oil Truce Collapses",
-          "Tese",
-          [],
-          ""
-        ],
-        [
-          "11/06",
-          "brazilsun.com",
-          "Assam : Youth turns scientific Eri silk and mushroom farming into lakhs",
-          "Tese",
-          [],
-          ""
-        ],
-        [
-          "13/03",
-          "riotimesonline.com",
-          "Peru Overtakes Chile in Agricultural Exports Rio Times",
           "Tese",
           [],
           ""
