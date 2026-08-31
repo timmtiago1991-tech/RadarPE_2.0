@@ -1,6 +1,6 @@
 {
   "meta": {
-    "geradoEm": "24/08/2026",
+    "geradoEm": "31/08/2026",
     "janela": "últimos 30 dias",
     "baseCNPJ": "RFB/CNPJ · jan/2026",
     "fonteNoticias": "GDELT DOC API · backfill 180d"
@@ -11,38 +11,38 @@
       "nome": "Saúde",
       "cor": "#2FA98E",
       "news": {
-        "count": 727,
-        "avg90": 1,
-        "momentum": 726.0,
+        "count": 480,
+        "avg90": 241,
+        "momentum": 0.99,
         "trend": "up",
         "serie": [
           [
             "mar",
-            246
+            238
           ],
           [
             "abr",
-            478
+            712
           ],
           [
             "mai",
-            0
+            244
           ],
           [
             "jun",
-            0
+            241
           ],
           [
             "jul",
-            0
+            237
           ],
           [
             "ago",
-            727
+            480
           ]
         ],
         "eventos": {
-          "Tese": 1451
+          "Tese": 2152
         }
       },
       "feed": [
@@ -120,10 +120,10 @@
       "nome": "Educação",
       "cor": "#123FD6",
       "news": {
-        "count": 4,
-        "avg90": 4,
-        "momentum": 0.0,
-        "trend": "flat",
+        "count": 15,
+        "avg90": 5,
+        "momentum": 2.0,
+        "trend": "up",
         "serie": [
           [
             "mar",
@@ -131,34 +131,66 @@
           ],
           [
             "abr",
-            0
+            4
           ],
           [
             "mai",
-            2
+            6
           ],
           [
             "jun",
-            3
+            9
           ],
           [
             "jul",
-            7
+            1
           ],
           [
             "ago",
-            5
+            15
           ]
         ],
         "eventos": {
-          "Tese": 17
+          "Tese": 35
         }
       },
       "feed": [
         [
+          "28/08",
+          "oprogressonet.com",
+          "Delegao de Imperatriz se destaca nos Jogos Escolares Maranhenses 2026 , em São Luís",
+          "Tese",
+          [],
+          ""
+        ],
+        [
+          "26/08",
+          "jornalpequeno.com.br",
+          "Sesc promove 4ª Jornada Literária em Raposa a partir desta quarta - feira ( 26 )",
+          "Tese",
+          [],
+          ""
+        ],
+        [
+          "25/08",
+          "riotimesonline.com",
+          "Nine Painters From One Rio Studio Show for Free",
+          "Tese",
+          [],
+          ""
+        ],
+        [
           "24/08",
           "otempo.com.br",
           "Ouro Fino abre licitao para compra de equipamentos para a Escola Esperança e Vida",
+          "Tese",
+          [],
+          ""
+        ],
+        [
+          "24/08",
+          "riotimesonline.com",
+          "Sílvia Pérez Cruz in Havana : Free Concert , No Tickets",
           "Tese",
           [],
           ""
@@ -186,38 +218,6 @@
           "Tese",
           [],
           ""
-        ],
-        [
-          "19/08",
-          "regiaonoroeste.com",
-          "Secretaria de Agricultura de Fernandópolis promove roda de conversa sobre combate à violência contra a mulher",
-          "Tese",
-          [],
-          ""
-        ],
-        [
-          "20/07",
-          "diariodigital.com.br",
-          "Assaltantes são presos após tentativa de roubo a joalheria em São Gabriel do Oeste",
-          "Tese",
-          [],
-          ""
-        ],
-        [
-          "19/07",
-          "diariodosudoeste.com.br",
-          "Primeira Escola Diocesana para Ministros Auxiliares",
-          "Tese",
-          [],
-          ""
-        ],
-        [
-          "18/07",
-          "tribunadonorte.com.br",
-          "O queijo de manteiga é um Feito Potiguar - Tribuna do Norte",
-          "Tese",
-          [],
-          ""
         ]
       ],
       "estrutura": {},
@@ -229,14 +229,14 @@
       "nome": "Agro",
       "cor": "#6DBE45",
       "news": {
-        "count": 0,
+        "count": 7,
         "avg90": 4,
-        "momentum": -1.0,
-        "trend": "down",
+        "momentum": 0.75,
+        "trend": "up",
         "serie": [
           [
             "mar",
-            0
+            1
           ],
           [
             "abr",
@@ -244,86 +244,86 @@
           ],
           [
             "mai",
-            0
+            2
           ],
           [
             "jun",
-            1
+            4
           ],
           [
             "jul",
-            10
+            6
           ],
           [
             "ago",
-            0
+            7
           ]
         ],
         "eventos": {
-          "Tese": 11
+          "Tese": 20
         }
       },
       "feed": [
         [
+          "25/08",
+          "riotimesonline.com",
+          "Paraguay doctors strike over health system collapse",
+          "Tese",
+          [],
+          ""
+        ],
+        [
+          "25/08",
+          "riotimesonline.com",
+          "Rosario Restaurants : A 2026 Guide With Addresses",
+          "Tese",
+          [],
+          ""
+        ],
+        [
+          "25/08",
+          "riotimesonline.com",
+          "Paraguay exports new markets : 75 products , 43 destinations",
+          "Tese",
+          [],
+          ""
+        ],
+        [
+          "20/08",
+          "riotimesonline.com",
+          "Liberia Deportees : 1 , 200 Agreed , First 20 Arrive Today",
+          "Tese",
+          [],
+          ""
+        ],
+        [
+          "17/08",
+          "riotimesonline.com",
+          "Molinos Agro and ACA Soy Crushing Plant Is a First in Twelve Years",
+          "Tese",
+          [],
+          ""
+        ],
+        [
+          "14/08",
+          "riotimesonline.com",
+          "El Salvador - Belize Trade Deal Opens 400 Tariff Lines",
+          "Tese",
+          [],
+          ""
+        ],
+        [
+          "13/08",
+          "riotimesonline.com",
+          "Vaca Muerta Electric Fracturing : YPF and Halliburton Deploy Zeus",
+          "Tese",
+          [],
+          ""
+        ],
+        [
           "24/07",
           "riotimesonline.com",
           "Guadalajara October Festivals 2026 : 31 Days of Music",
-          "Tese",
-          [],
-          ""
-        ],
-        [
-          "22/07",
-          "riotimesonline.com",
-          "Cementos Pacasmayo Profit Jumps 58 % on Peru Rebound",
-          "Tese",
-          [],
-          ""
-        ],
-        [
-          "18/07",
-          "riotimesonline.com",
-          "IMF and Washington back Colombia fiscal - deficit fix plan",
-          "Tese",
-          [],
-          ""
-        ],
-        [
-          "18/07",
-          "riotimesonline.com",
-          "Oaxaca Mezcal Fair Opens with Free Shuttles for Guelaguetza 2026",
-          "Tese",
-          [],
-          ""
-        ],
-        [
-          "16/07",
-          "riotimesonline.com",
-          "Africa moves up the value chain will the West keep pace ?",
-          "Tese",
-          [],
-          ""
-        ],
-        [
-          "16/07",
-          "riotimesonline.com",
-          "Strait of Hormuz Crisis : Latin America Energy Leverage",
-          "Tese",
-          [],
-          ""
-        ],
-        [
-          "12/07",
-          "riotimesonline.com",
-          "Cameroon Sugar Mill : $100 Million Challenge to Castel",
-          "Tese",
-          [],
-          ""
-        ],
-        [
-          "09/07",
-          "riotimesonline.com",
-          "Brazil Fuel Subsidy : $4 . 8bn Backed as Oil Truce Collapses",
           "Tese",
           [],
           ""
