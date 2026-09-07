@@ -1,6 +1,6 @@
 {
   "meta": {
-    "geradoEm": "31/08/2026",
+    "geradoEm": "07/09/2026",
     "janela": "últimos 30 dias",
     "baseCNPJ": "RFB/CNPJ · jan/2026",
     "fonteNoticias": "GDELT DOC API · backfill 180d"
@@ -11,101 +11,101 @@
       "nome": "Saúde",
       "cor": "#2FA98E",
       "news": {
-        "count": 480,
-        "avg90": 241,
-        "momentum": 0.99,
-        "trend": "up",
+        "count": 0,
+        "avg90": 243,
+        "momentum": -1.0,
+        "trend": "down",
         "serie": [
           [
-            "mar",
-            238
-          ],
-          [
             "abr",
-            712
-          ],
-          [
-            "mai",
-            244
-          ],
-          [
-            "jun",
             241
           ],
           [
+            "mai",
+            243
+          ],
+          [
+            "jun",
+            486
+          ],
+          [
             "jul",
-            237
+            0
           ],
           [
             "ago",
-            480
+            0
+          ],
+          [
+            "set",
+            0
           ]
         ],
         "eventos": {
-          "Tese": 2152
+          "Tese": 970
         }
       },
       "feed": [
         [
-          "20/08",
-          "folha.uol.com.br",
-          "Boca Rosa : O que é pielonefrite e quais os sintomas - 19 / 08 / 2026 - Equilíbrio e Saúde",
+          "11/06",
+          "sonoticias.com.br",
+          "Precisa ser compensado",
           "Tese",
           [],
           ""
         ],
         [
-          "20/08",
-          "conjur.com.br",
-          "Induo de parto sem consentimento configura violência obstétrica",
+          "11/06",
+          "boainformacao.com.br",
+          "Homem apontado como liderança do PCC morre em confronto",
           "Tese",
           [],
           ""
         ],
         [
-          "20/08",
+          "11/06",
           "g1.globo.com",
-          "Paciente de 60 anos desaparece de hospital em SP antes de cirurgia e é encontrado uma semana depois a 50 km de distância",
+          "Quem era piloto paranaense que morreu em queda de avião em SP",
           "Tese",
           [],
           ""
         ],
         [
-          "20/08",
-          "odia.ig.com.br",
-          "Explosão em prédio residencial de Copacabana deixa feridos | Rio de Janeiro",
+          "11/06",
+          "sonoticias.com.br",
+          "Fumaça das queimadas custa R$ 17 , 6 milhões ao SUS por ano na Amazônia e Cerrado , aponta estudo da Unemat",
           "Tese",
           [],
           ""
         ],
         [
-          "20/08",
-          "revistaforum.com.br",
-          "Apresentadora acaba com Moro após senador inventar hospital",
+          "11/06",
+          "arede.info",
+          "Motorista fura preferencial e causa batida contra caminhonete em PG",
           "Tese",
           [],
           ""
         ],
         [
-          "20/08",
-          "revistaquem.globo.com",
-          "Morre Antônio Calixto , cover de Junior que participou de documentário de Sandy & Junior",
+          "11/06",
+          "sonoticias.com.br",
+          "Pivetta quer compensao para prefeituras do Nortão e Estado ;  Pará arrecada e Mato Grosso paga",
           "Tese",
           [],
           ""
         ],
         [
-          "20/08",
-          "folha.uol.com.br",
-          "Grávida morre após ser agredida por companheiro em SP - 19 / 08 / 2026 - Cotidiano",
+          "11/06",
+          "tribunaonline.com.br",
+          "Foragido do RJ por estuprar e matar a própria filha de três anos é preso no ES",
           "Tese",
           [],
           ""
         ],
         [
-          "20/08",
-          "oprogressonet.com",
-          "Em debate , Dorinha garante Hospital Geral de Araguaína em 2027 e detalha propostas para a saúde",
+          "11/06",
+          "em.com.br",
+          "Cleitinho diz que Lula será  muito bem recebido  em Divinópolis",
           "Tese",
           [],
           ""
@@ -120,49 +120,41 @@
       "nome": "Educação",
       "cor": "#123FD6",
       "news": {
-        "count": 15,
-        "avg90": 5,
-        "momentum": 2.0,
+        "count": 8,
+        "avg90": 3,
+        "momentum": 1.67,
         "trend": "up",
         "serie": [
           [
-            "mar",
-            0
-          ],
-          [
             "abr",
-            4
+            8
           ],
           [
             "mai",
-            6
+            0
           ],
           [
             "jun",
-            9
+            0
           ],
           [
             "jul",
-            1
+            8
           ],
           [
             "ago",
-            15
+            8
+          ],
+          [
+            "set",
+            0
           ]
         ],
         "eventos": {
-          "Tese": 35
+          "Tese": 24
         }
       },
       "feed": [
-        [
-          "28/08",
-          "oprogressonet.com",
-          "Delegao de Imperatriz se destaca nos Jogos Escolares Maranhenses 2026 , em São Luís",
-          "Tese",
-          [],
-          ""
-        ],
         [
           "26/08",
           "jornalpequeno.com.br",
@@ -218,6 +210,14 @@
           "Tese",
           [],
           ""
+        ],
+        [
+          "19/08",
+          "regiaonoroeste.com",
+          "Secretaria de Agricultura de Fernandópolis promove roda de conversa sobre combate à violência contra a mulher",
+          "Tese",
+          [],
+          ""
         ]
       ],
       "estrutura": {},
@@ -229,101 +229,61 @@
       "nome": "Agro",
       "cor": "#6DBE45",
       "news": {
-        "count": 7,
-        "avg90": 4,
-        "momentum": 0.75,
-        "trend": "up",
+        "count": 0,
+        "avg90": 1,
+        "momentum": -1.0,
+        "trend": "down",
         "serie": [
-          [
-            "mar",
-            1
-          ],
           [
             "abr",
             0
           ],
           [
             "mai",
-            2
+            0
           ],
           [
             "jun",
-            4
+            1
           ],
           [
             "jul",
-            6
+            0
           ],
           [
             "ago",
-            7
+            0
+          ],
+          [
+            "set",
+            0
           ]
         ],
         "eventos": {
-          "Tese": 20
+          "Tese": 3
         }
       },
       "feed": [
         [
-          "25/08",
-          "riotimesonline.com",
-          "Paraguay doctors strike over health system collapse",
+          "23/06",
+          "brazilsun.com",
+          "Naturite Agro Products Strengthens Its Position in the Growing Global Natural Ingredients and Nutraceuticals Market",
           "Tese",
           [],
           ""
         ],
         [
-          "25/08",
+          "31/03",
           "riotimesonline.com",
-          "Rosario Restaurants : A 2026 Guide With Addresses",
+          "Merval Argentina Today Surges 2 . 6 % on YPF Rio Times",
           "Tese",
           [],
           ""
         ],
         [
-          "25/08",
+          "25/03",
           "riotimesonline.com",
-          "Paraguay exports new markets : 75 products , 43 destinations",
-          "Tese",
-          [],
-          ""
-        ],
-        [
-          "20/08",
-          "riotimesonline.com",
-          "Liberia Deportees : 1 , 200 Agreed , First 20 Arrive Today",
-          "Tese",
-          [],
-          ""
-        ],
-        [
-          "17/08",
-          "riotimesonline.com",
-          "Molinos Agro and ACA Soy Crushing Plant Is a First in Twelve Years",
-          "Tese",
-          [],
-          ""
-        ],
-        [
-          "14/08",
-          "riotimesonline.com",
-          "El Salvador - Belize Trade Deal Opens 400 Tariff Lines",
-          "Tese",
-          [],
-          ""
-        ],
-        [
-          "13/08",
-          "riotimesonline.com",
-          "Vaca Muerta Electric Fracturing : YPF and Halliburton Deploy Zeus",
-          "Tese",
-          [],
-          ""
-        ],
-        [
-          "24/07",
-          "riotimesonline.com",
-          "Guadalajara October Festivals 2026 : 31 Days of Music",
+          "Boa Safra Earnings : Q4 Loss as Seed Margins Fall",
           "Tese",
           [],
           ""
