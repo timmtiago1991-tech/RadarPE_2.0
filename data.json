@@ -1,6 +1,6 @@
 {
   "meta": {
-    "geradoEm": "07/09/2026",
+    "geradoEm": "14/09/2026",
     "janela": "últimos 30 dias",
     "baseCNPJ": "RFB/CNPJ · jan/2026",
     "fonteNoticias": "GDELT DOC API · backfill 180d"
@@ -11,22 +11,22 @@
       "nome": "Saúde",
       "cor": "#2FA98E",
       "news": {
-        "count": 0,
-        "avg90": 243,
-        "momentum": -1.0,
-        "trend": "down",
+        "count": 235,
+        "avg90": 81,
+        "momentum": 1.9,
+        "trend": "up",
         "serie": [
           [
             "abr",
-            241
+            0
           ],
           [
             "mai",
-            243
+            242
           ],
           [
             "jun",
-            486
+            0
           ],
           [
             "jul",
@@ -34,7 +34,7 @@
           ],
           [
             "ago",
-            0
+            235
           ],
           [
             "set",
@@ -42,70 +42,70 @@
           ]
         ],
         "eventos": {
-          "Tese": 970
+          "Tese": 477
         }
       },
       "feed": [
         [
-          "11/06",
-          "sonoticias.com.br",
-          "Precisa ser compensado",
-          "Tese",
-          [],
-          ""
-        ],
-        [
-          "11/06",
-          "boainformacao.com.br",
-          "Homem apontado como liderança do PCC morre em confronto",
-          "Tese",
-          [],
-          ""
-        ],
-        [
-          "11/06",
+          "27/08",
           "g1.globo.com",
-          "Quem era piloto paranaense que morreu em queda de avião em SP",
+          "Romeu Zema , candidato à Presidência pelo Novo , faz campanha em Minas Gerais",
           "Tese",
           [],
           ""
         ],
         [
-          "11/06",
+          "27/08",
           "sonoticias.com.br",
-          "Fumaça das queimadas custa R$ 17 , 6 milhões ao SUS por ano na Amazônia e Cerrado , aponta estudo da Unemat",
+          "Obras de nova UPA avançam em Sorriso ; R$ 20 milhões",
           "Tese",
           [],
           ""
         ],
         [
-          "11/06",
-          "arede.info",
-          "Motorista fura preferencial e causa batida contra caminhonete em PG",
+          "27/08",
+          "bonde.com.br",
+          "Fonoaudiologia e Geologia : novos cursos da UEL abrem inscries para vestibular",
           "Tese",
           [],
           ""
         ],
         [
-          "11/06",
-          "sonoticias.com.br",
-          "Pivetta quer compensao para prefeituras do Nortão e Estado ;  Pará arrecada e Mato Grosso paga",
+          "27/08",
+          "novoeste.com",
+          "Vacinao na gravidez amplia proteo do bebê nos primeiros meses de vida",
           "Tese",
           [],
           ""
         ],
         [
-          "11/06",
-          "tribunaonline.com.br",
-          "Foragido do RJ por estuprar e matar a própria filha de três anos é preso no ES",
+          "27/08",
+          "vejasp.abril.com.br",
+          "Os Mais Amados 2026 : marcas , endereços e serviços favoritos dos paulistanos",
           "Tese",
           [],
           ""
         ],
         [
-          "11/06",
-          "em.com.br",
-          "Cleitinho diz que Lula será  muito bem recebido  em Divinópolis",
+          "27/08",
+          "g1.globo.com",
+          "Candidatos ao governo do DF : educao e comércio pautam agendas",
+          "Tese",
+          [],
+          ""
+        ],
+        [
+          "27/08",
+          "g1.globo.com",
+          "Homem morto durante operao da Draco em Itaguaí  identificado",
+          "Tese",
+          [],
+          ""
+        ],
+        [
+          "27/08",
+          "gazetadigital.com.br",
+          "Candidatos cumprem agenda de entrevistas e reuniões na quinta",
           "Tese",
           [],
           ""
@@ -120,34 +120,34 @@
       "nome": "Educação",
       "cor": "#123FD6",
       "news": {
-        "count": 8,
+        "count": 11,
         "avg90": 3,
-        "momentum": 1.67,
+        "momentum": 2.67,
         "trend": "up",
         "serie": [
           [
             "abr",
-            8
+            0
           ],
           [
             "mai",
-            0
+            4
           ],
           [
             "jun",
-            0
+            4
           ],
           [
             "jul",
-            8
+            3
           ],
           [
             "ago",
-            8
+            10
           ],
           [
             "set",
-            0
+            3
           ]
         ],
         "eventos": {
@@ -155,6 +155,30 @@
         }
       },
       "feed": [
+        [
+          "12/09",
+          "g1.globo.com",
+          "Vacinao antirrábica em Campina Grande : veja locais do Dia D",
+          "Tese",
+          [],
+          ""
+        ],
+        [
+          "12/09",
+          "tribunadonorte.com.br",
+          "Entre sanfona e sensores , alunos disputam Olimpíada de Robótica em Natal",
+          "Tese",
+          [],
+          ""
+        ],
+        [
+          "10/09",
+          "tribunadonorte.com.br",
+          "Mostra da UFRN apresenta cursos de graduo a estudantes",
+          "Tese",
+          [],
+          ""
+        ],
         [
           "26/08",
           "jornalpequeno.com.br",
@@ -194,30 +218,6 @@
           "Tese",
           [],
           ""
-        ],
-        [
-          "21/08",
-          "fatimanews.com.br",
-          "Vila Rica : Escola José do Patrocínio conquista prêmio para a Educao de Vicentina",
-          "Tese",
-          [],
-          ""
-        ],
-        [
-          "20/08",
-          "riotimesonline.com",
-          "Mostra de Circo do Recife : Free Final Weekend",
-          "Tese",
-          [],
-          ""
-        ],
-        [
-          "19/08",
-          "regiaonoroeste.com",
-          "Secretaria de Agricultura de Fernandópolis promove roda de conversa sobre combate à violência contra a mulher",
-          "Tese",
-          [],
-          ""
         ]
       ],
       "estrutura": {},
@@ -229,10 +229,10 @@
       "nome": "Agro",
       "cor": "#6DBE45",
       "news": {
-        "count": 0,
+        "count": 4,
         "avg90": 1,
-        "momentum": -1.0,
-        "trend": "down",
+        "momentum": 3.0,
+        "trend": "up",
         "serie": [
           [
             "abr",
@@ -240,19 +240,19 @@
           ],
           [
             "mai",
-            0
+            3
           ],
           [
             "jun",
-            1
+            0
           ],
           [
             "jul",
-            0
+            2
           ],
           [
             "ago",
-            0
+            4
           ],
           [
             "set",
@@ -260,30 +260,70 @@
           ]
         ],
         "eventos": {
-          "Tese": 3
+          "Tese": 9
         }
       },
       "feed": [
         [
-          "23/06",
-          "brazilsun.com",
-          "Naturite Agro Products Strengthens Its Position in the Growing Global Natural Ingredients and Nutraceuticals Market",
+          "25/08",
+          "riotimesonline.com",
+          "Paraguay doctors strike over health system collapse",
           "Tese",
           [],
           ""
         ],
         [
-          "31/03",
+          "25/08",
           "riotimesonline.com",
-          "Merval Argentina Today Surges 2 . 6 % on YPF Rio Times",
+          "Rosario Restaurants : A 2026 Guide With Addresses",
           "Tese",
           [],
           ""
         ],
         [
-          "25/03",
+          "25/08",
           "riotimesonline.com",
-          "Boa Safra Earnings : Q4 Loss as Seed Margins Fall",
+          "Paraguay exports new markets : 75 products , 43 destinations",
+          "Tese",
+          [],
+          ""
+        ],
+        [
+          "20/08",
+          "riotimesonline.com",
+          "Liberia Deportees : 1 , 200 Agreed , First 20 Arrive Today",
+          "Tese",
+          [],
+          ""
+        ],
+        [
+          "07/07",
+          "riotimesonline.com",
+          "Nigeria Palm Oil Boom : Presco and Okomu Post Record Profits",
+          "Tese",
+          [],
+          ""
+        ],
+        [
+          "07/07",
+          "riotimesonline.com",
+          "Sucrivoire Stock Up 190 %: BRVM Best Performer of 2026",
+          "Tese",
+          [],
+          ""
+        ],
+        [
+          "25/05",
+          "riotimesonline.com",
+          "Brazil Bank Stocks Shed R$80 Billion on Credit Warning",
+          "Tese",
+          [],
+          ""
+        ],
+        [
+          "23/05",
+          "riotimesonline.com",
+          "Latin American Pulse for Saturday , May 23 , 2026",
           "Tese",
           [],
           ""
