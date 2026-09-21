@@ -1,6 +1,6 @@
 {
   "meta": {
-    "geradoEm": "14/09/2026",
+    "geradoEm": "21/09/2026",
     "janela": "últimos 30 dias",
     "baseCNPJ": "RFB/CNPJ · jan/2026",
     "fonteNoticias": "GDELT DOC API · backfill 180d"
@@ -11,10 +11,10 @@
       "nome": "Saúde",
       "cor": "#2FA98E",
       "news": {
-        "count": 235,
-        "avg90": 81,
-        "momentum": 1.9,
-        "trend": "up",
+        "count": 0,
+        "avg90": 79,
+        "momentum": -1.0,
+        "trend": "down",
         "serie": [
           [
             "abr",
@@ -22,7 +22,7 @@
           ],
           [
             "mai",
-            242
+            0
           ],
           [
             "jun",
@@ -30,11 +30,11 @@
           ],
           [
             "jul",
-            0
+            237
           ],
           [
             "ago",
-            235
+            0
           ],
           [
             "set",
@@ -42,70 +42,70 @@
           ]
         ],
         "eventos": {
-          "Tese": 477
+          "Tese": 237
         }
       },
       "feed": [
         [
-          "27/08",
-          "g1.globo.com",
-          "Romeu Zema , candidato à Presidência pelo Novo , faz campanha em Minas Gerais",
+          "09/07",
+          "em.com.br",
+          "Motorista de ônibus discutiu com passageira e não passou mal , diz Saritur",
           "Tese",
           [],
           ""
         ],
         [
-          "27/08",
-          "sonoticias.com.br",
-          "Obras de nova UPA avançam em Sorriso ; R$ 20 milhões",
+          "09/07",
+          "jc.uol.com.br",
+          "Prefeitura do Recife convoca 352 aprovados em concursos para Saúde , Educao e Mulher",
           "Tese",
           [],
           ""
         ],
         [
-          "27/08",
-          "bonde.com.br",
-          "Fonoaudiologia e Geologia : novos cursos da UEL abrem inscries para vestibular",
+          "09/07",
+          "topnews.com.br",
+          "Políca Militar registra acidente entre Sandero e Hilux em cruzamento de Aripuanã",
           "Tese",
           [],
           ""
         ],
         [
-          "27/08",
+          "09/07",
+          "montesclaros.com",
+          "Energia cai , morador sai para verificar o que houve e encontra homem - com histórico de prisão - levando os fios energizados de sua casa",
+          "Tese",
+          [],
+          ""
+        ],
+        [
+          "09/07",
           "novoeste.com",
-          "Vacinao na gravidez amplia proteo do bebê nos primeiros meses de vida",
+          "Antioxidante do tomate também está em cítricas , mostra estudo",
           "Tese",
           [],
           ""
         ],
         [
-          "27/08",
-          "vejasp.abril.com.br",
-          "Os Mais Amados 2026 : marcas , endereços e serviços favoritos dos paulistanos",
-          "Tese",
-          [],
-          ""
-        ],
-        [
-          "27/08",
+          "09/07",
           "g1.globo.com",
-          "Candidatos ao governo do DF : educao e comércio pautam agendas",
+          "Mulher ferida após piso desabar em festa de 15 anos leva 30 pontos",
           "Tese",
           [],
           ""
         ],
         [
-          "27/08",
-          "g1.globo.com",
-          "Homem morto durante operao da Draco em Itaguaí  identificado",
+          "09/07",
+          "diariodaregiao.com.br",
+          "Tribunal nega pedido da Santa Casa de Casa Branca para suspender processos",
           "Tese",
           [],
           ""
         ],
         [
-          "27/08",
-          "gazetadigital.com.br",
-          "Candidatos cumprem agenda de entrevistas e reuniões na quinta",
+          "09/07",
+          "acritica.net",
+          "Crianças são mais vulneráveis a picadas de escorpião e exigem atendimento rápido",
           "Tese",
           [],
           ""
@@ -120,10 +120,10 @@
       "nome": "Educação",
       "cor": "#123FD6",
       "news": {
-        "count": 11,
+        "count": 0,
         "avg90": 3,
-        "momentum": 2.67,
-        "trend": "up",
+        "momentum": -1.0,
+        "trend": "down",
         "serie": [
           [
             "abr",
@@ -131,7 +131,7 @@
           ],
           [
             "mai",
-            4
+            0
           ],
           [
             "jun",
@@ -139,82 +139,82 @@
           ],
           [
             "jul",
-            3
+            0
           ],
           [
             "ago",
-            10
+            5
           ],
           [
             "set",
-            3
+            0
           ]
         ],
         "eventos": {
-          "Tese": 24
+          "Tese": 9
         }
       },
       "feed": [
         [
-          "12/09",
+          "19/08",
+          "regiaonoroeste.com",
+          "Secretaria de Agricultura de Fernandópolis promove roda de conversa sobre combate à violência contra a mulher",
+          "Tese",
+          [],
+          ""
+        ],
+        [
+          "18/08",
+          "regiaonoroeste.com",
+          "Programa  Saúde no Campo  realiza edio especial com foco no combate à violência contra a mulher em Fernandópolis",
+          "Tese",
+          [],
+          ""
+        ],
+        [
+          "17/08",
           "g1.globo.com",
-          "Vacinao antirrábica em Campina Grande : veja locais do Dia D",
+          "Semana da Pátria 2026 em Santarém : confira a ordem dos desfiles",
           "Tese",
           [],
           ""
         ],
         [
-          "12/09",
-          "tribunadonorte.com.br",
-          "Entre sanfona e sensores , alunos disputam Olimpíada de Robótica em Natal",
-          "Tese",
-          [],
-          ""
-        ],
-        [
-          "10/09",
-          "tribunadonorte.com.br",
-          "Mostra da UFRN apresenta cursos de graduo a estudantes",
-          "Tese",
-          [],
-          ""
-        ],
-        [
-          "26/08",
-          "jornalpequeno.com.br",
-          "Sesc promove 4ª Jornada Literária em Raposa a partir desta quarta - feira ( 26 )",
-          "Tese",
-          [],
-          ""
-        ],
-        [
-          "25/08",
+          "13/08",
           "riotimesonline.com",
-          "Nine Painters From One Rio Studio Show for Free",
+          "Rio Theatro Municipal Stages the Ballet  Dom Quixote",
           "Tese",
           [],
           ""
         ],
         [
-          "24/08",
-          "otempo.com.br",
-          "Ouro Fino abre licitao para compra de equipamentos para a Escola Esperança e Vida",
-          "Tese",
-          [],
-          ""
-        ],
-        [
-          "24/08",
+          "13/08",
           "riotimesonline.com",
-          "Sílvia Pérez Cruz in Havana : Free Concert , No Tickets",
+          "Colombia Tech Fest Brings an Open - Air Tech Festival to Bogotá",
           "Tese",
           [],
           ""
         ],
         [
-          "21/08",
-          "tribunadonorte.com.br",
-          "RN receberá supercomputador de alto desempenho avaliado em cerca de R$ 1 , 06 bilhão",
+          "09/06",
+          "acritica.net",
+          "Mural Postal Campão leva arte urbana a Campo Grande",
+          "Tese",
+          [],
+          ""
+        ],
+        [
+          "08/06",
+          "record.r7.com",
+          "Grupo ND promove plantio e doao de 630 mudas nativas durante a Semana do Meio Ambiente",
+          "Tese",
+          [],
+          ""
+        ],
+        [
+          "07/06",
+          "riotimesonline.com",
+          "Rio de Janeiro Daily Brief for Sunday , June 7 , 2026",
           "Tese",
           [],
           ""
@@ -229,10 +229,10 @@
       "nome": "Agro",
       "cor": "#6DBE45",
       "news": {
-        "count": 4,
+        "count": 0,
         "avg90": 1,
-        "momentum": 3.0,
-        "trend": "up",
+        "momentum": -1.0,
+        "trend": "down",
         "serie": [
           [
             "abr",
@@ -240,11 +240,11 @@
           ],
           [
             "mai",
-            3
+            1
           ],
           [
             "jun",
-            0
+            1
           ],
           [
             "jul",
@@ -252,7 +252,7 @@
           ],
           [
             "ago",
-            4
+            0
           ],
           [
             "set",
@@ -260,70 +260,38 @@
           ]
         ],
         "eventos": {
-          "Tese": 9
+          "Tese": 4
         }
       },
       "feed": [
         [
-          "25/08",
+          "24/07",
           "riotimesonline.com",
-          "Paraguay doctors strike over health system collapse",
+          "Guadalajara October Festivals 2026 : 31 Days of Music",
           "Tese",
           [],
           ""
         ],
         [
-          "25/08",
+          "22/07",
           "riotimesonline.com",
-          "Rosario Restaurants : A 2026 Guide With Addresses",
+          "Cementos Pacasmayo Profit Jumps 58 % on Peru Rebound",
           "Tese",
           [],
           ""
         ],
         [
-          "25/08",
-          "riotimesonline.com",
-          "Paraguay exports new markets : 75 products , 43 destinations",
+          "23/06",
+          "brazilsun.com",
+          "Naturite Agro Products Strengthens Its Position in the Growing Global Natural Ingredients and Nutraceuticals Market",
           "Tese",
           [],
           ""
         ],
         [
-          "20/08",
+          "05/05",
           "riotimesonline.com",
-          "Liberia Deportees : 1 , 200 Agreed , First 20 Arrive Today",
-          "Tese",
-          [],
-          ""
-        ],
-        [
-          "07/07",
-          "riotimesonline.com",
-          "Nigeria Palm Oil Boom : Presco and Okomu Post Record Profits",
-          "Tese",
-          [],
-          ""
-        ],
-        [
-          "07/07",
-          "riotimesonline.com",
-          "Sucrivoire Stock Up 190 %: BRVM Best Performer of 2026",
-          "Tese",
-          [],
-          ""
-        ],
-        [
-          "25/05",
-          "riotimesonline.com",
-          "Brazil Bank Stocks Shed R$80 Billion on Credit Warning",
-          "Tese",
-          [],
-          ""
-        ],
-        [
-          "23/05",
-          "riotimesonline.com",
-          "Latin American Pulse for Saturday , May 23 , 2026",
+          "Latin America Pulse : Sinaloa Governor Out Rio Times",
           "Tese",
           [],
           ""
