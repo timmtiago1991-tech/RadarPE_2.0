@@ -1,6 +1,6 @@
 {
   "meta": {
-    "geradoEm": "21/09/2026",
+    "geradoEm": "28/09/2026",
     "janela": "últimos 30 dias",
     "baseCNPJ": "RFB/CNPJ · jan/2026",
     "fonteNoticias": "GDELT DOC API · backfill 180d"
@@ -12,29 +12,29 @@
       "cor": "#2FA98E",
       "news": {
         "count": 0,
-        "avg90": 79,
+        "avg90": 239,
         "momentum": -1.0,
         "trend": "down",
         "serie": [
           [
             "abr",
-            0
+            479
           ],
           [
             "mai",
-            0
+            482
           ],
           [
             "jun",
-            0
+            241
           ],
           [
             "jul",
-            237
+            242
           ],
           [
             "ago",
-            0
+            235
           ],
           [
             "set",
@@ -42,70 +42,70 @@
           ]
         ],
         "eventos": {
-          "Tese": 237
+          "Tese": 1679
         }
       },
       "feed": [
         [
-          "09/07",
-          "em.com.br",
-          "Motorista de ônibus discutiu com passageira e não passou mal , diz Saritur",
-          "Tese",
-          [],
-          ""
-        ],
-        [
-          "09/07",
-          "jc.uol.com.br",
-          "Prefeitura do Recife convoca 352 aprovados em concursos para Saúde , Educao e Mulher",
-          "Tese",
-          [],
-          ""
-        ],
-        [
-          "09/07",
-          "topnews.com.br",
-          "Políca Militar registra acidente entre Sandero e Hilux em cruzamento de Aripuanã",
-          "Tese",
-          [],
-          ""
-        ],
-        [
-          "09/07",
-          "montesclaros.com",
-          "Energia cai , morador sai para verificar o que houve e encontra homem - com histórico de prisão - levando os fios energizados de sua casa",
-          "Tese",
-          [],
-          ""
-        ],
-        [
-          "09/07",
-          "novoeste.com",
-          "Antioxidante do tomate também está em cítricas , mostra estudo",
-          "Tese",
-          [],
-          ""
-        ],
-        [
-          "09/07",
+          "27/08",
           "g1.globo.com",
-          "Mulher ferida após piso desabar em festa de 15 anos leva 30 pontos",
+          "Romeu Zema , candidato à Presidência pelo Novo , faz campanha em Minas Gerais",
           "Tese",
           [],
           ""
         ],
         [
-          "09/07",
-          "diariodaregiao.com.br",
-          "Tribunal nega pedido da Santa Casa de Casa Branca para suspender processos",
+          "27/08",
+          "sonoticias.com.br",
+          "Obras de nova UPA avançam em Sorriso ; R$ 20 milhões",
           "Tese",
           [],
           ""
         ],
         [
-          "09/07",
-          "acritica.net",
-          "Crianças são mais vulneráveis a picadas de escorpião e exigem atendimento rápido",
+          "27/08",
+          "bonde.com.br",
+          "Fonoaudiologia e Geologia : novos cursos da UEL abrem inscries para vestibular",
+          "Tese",
+          [],
+          ""
+        ],
+        [
+          "27/08",
+          "novoeste.com",
+          "Vacinao na gravidez amplia proteo do bebê nos primeiros meses de vida",
+          "Tese",
+          [],
+          ""
+        ],
+        [
+          "27/08",
+          "vejasp.abril.com.br",
+          "Os Mais Amados 2026 : marcas , endereços e serviços favoritos dos paulistanos",
+          "Tese",
+          [],
+          ""
+        ],
+        [
+          "27/08",
+          "g1.globo.com",
+          "Candidatos ao governo do DF : educao e comércio pautam agendas",
+          "Tese",
+          [],
+          ""
+        ],
+        [
+          "27/08",
+          "g1.globo.com",
+          "Homem morto durante operao da Draco em Itaguaí  identificado",
+          "Tese",
+          [],
+          ""
+        ],
+        [
+          "27/08",
+          "gazetadigital.com.br",
+          "Candidatos cumprem agenda de entrevistas e reuniões na quinta",
           "Tese",
           [],
           ""
@@ -121,7 +121,7 @@
       "cor": "#123FD6",
       "news": {
         "count": 0,
-        "avg90": 3,
+        "avg90": 2,
         "momentum": -1.0,
         "trend": "down",
         "serie": [
@@ -135,7 +135,7 @@
           ],
           [
             "jun",
-            4
+            0
           ],
           [
             "jul",
@@ -151,7 +151,7 @@
           ]
         ],
         "eventos": {
-          "Tese": 9
+          "Tese": 5
         }
       },
       "feed": [
@@ -194,30 +194,6 @@
           "Tese",
           [],
           ""
-        ],
-        [
-          "09/06",
-          "acritica.net",
-          "Mural Postal Campão leva arte urbana a Campo Grande",
-          "Tese",
-          [],
-          ""
-        ],
-        [
-          "08/06",
-          "record.r7.com",
-          "Grupo ND promove plantio e doao de 630 mudas nativas durante a Semana do Meio Ambiente",
-          "Tese",
-          [],
-          ""
-        ],
-        [
-          "07/06",
-          "riotimesonline.com",
-          "Rio de Janeiro Daily Brief for Sunday , June 7 , 2026",
-          "Tese",
-          [],
-          ""
         ]
       ],
       "estrutura": {},
@@ -230,7 +206,7 @@
       "cor": "#6DBE45",
       "news": {
         "count": 0,
-        "avg90": 1,
+        "avg90": 2,
         "momentum": -1.0,
         "trend": "down",
         "serie": [
@@ -240,11 +216,11 @@
           ],
           [
             "mai",
-            1
+            0
           ],
           [
             "jun",
-            1
+            0
           ],
           [
             "jul",
@@ -252,7 +228,7 @@
           ],
           [
             "ago",
-            0
+            3
           ],
           [
             "set",
@@ -260,38 +236,46 @@
           ]
         ],
         "eventos": {
-          "Tese": 4
+          "Tese": 5
         }
       },
       "feed": [
         [
-          "24/07",
+          "17/08",
           "riotimesonline.com",
-          "Guadalajara October Festivals 2026 : 31 Days of Music",
+          "Molinos Agro and ACA Soy Crushing Plant Is a First in Twelve Years",
           "Tese",
           [],
           ""
         ],
         [
-          "22/07",
+          "14/08",
           "riotimesonline.com",
-          "Cementos Pacasmayo Profit Jumps 58 % on Peru Rebound",
+          "El Salvador - Belize Trade Deal Opens 400 Tariff Lines",
           "Tese",
           [],
           ""
         ],
         [
-          "23/06",
-          "brazilsun.com",
-          "Naturite Agro Products Strengthens Its Position in the Growing Global Natural Ingredients and Nutraceuticals Market",
+          "13/08",
+          "riotimesonline.com",
+          "Vaca Muerta Electric Fracturing : YPF and Halliburton Deploy Zeus",
           "Tese",
           [],
           ""
         ],
         [
-          "05/05",
+          "12/07",
           "riotimesonline.com",
-          "Latin America Pulse : Sinaloa Governor Out Rio Times",
+          "Cameroon Sugar Mill : $100 Million Challenge to Castel",
+          "Tese",
+          [],
+          ""
+        ],
+        [
+          "09/07",
+          "riotimesonline.com",
+          "Brazil Fuel Subsidy : $4 . 8bn Backed as Oil Truce Collapses",
           "Tese",
           [],
           ""
