@@ -1,6 +1,6 @@
 {
   "meta": {
-    "geradoEm": "28/09/2026",
+    "geradoEm": "05/10/2026",
     "janela": "últimos 30 dias",
     "baseCNPJ": "RFB/CNPJ · jan/2026",
     "fonteNoticias": "GDELT DOC API · backfill 180d"
@@ -11,101 +11,101 @@
       "nome": "Saúde",
       "cor": "#2FA98E",
       "news": {
-        "count": 0,
-        "avg90": 239,
-        "momentum": -1.0,
-        "trend": "down",
+        "count": 487,
+        "avg90": 80,
+        "momentum": 5.09,
+        "trend": "up",
         "serie": [
           [
-            "abr",
-            479
-          ],
-          [
             "mai",
-            482
+            0
           ],
           [
             "jun",
-            241
+            0
           ],
           [
             "jul",
-            242
+            240
           ],
           [
             "ago",
-            235
+            0
           ],
           [
             "set",
-            0
+            359
+          ],
+          [
+            "out",
+            128
           ]
         ],
         "eventos": {
-          "Tese": 1679
+          "Tese": 1203
         }
       },
       "feed": [
         [
-          "27/08",
+          "01/10",
+          "conexaoto.com.br",
+          "Professora Dorinha projeta hospitais privados como parceiros no atendimento pelo SUS - Conexão Tocantins",
+          "Tese",
+          [],
+          ""
+        ],
+        [
+          "01/10",
           "g1.globo.com",
-          "Romeu Zema , candidato à Presidência pelo Novo , faz campanha em Minas Gerais",
+          "Turista mexicano morre ao tentar impedir fuga de assaltantes no Rio",
           "Tese",
           [],
           ""
         ],
         [
-          "27/08",
-          "sonoticias.com.br",
-          "Obras de nova UPA avançam em Sorriso ; R$ 20 milhões",
+          "01/10",
+          "noticiasdatv.uol.com.br",
+          "Resumo de Por Você : Gabriel pega Vanessa e Junqueira juntos , e reao dele surpreende",
           "Tese",
           [],
           ""
         ],
         [
-          "27/08",
-          "bonde.com.br",
-          "Fonoaudiologia e Geologia : novos cursos da UEL abrem inscries para vestibular",
+          "01/10",
+          "noticiasdatv.uol.com.br",
+          "Cantor Netinho é internado após recidiva de câncer :  Momento delicado",
           "Tese",
           [],
           ""
         ],
         [
-          "27/08",
-          "novoeste.com",
-          "Vacinao na gravidez amplia proteo do bebê nos primeiros meses de vida",
-          "Tese",
-          [],
-          ""
-        ],
-        [
-          "27/08",
-          "vejasp.abril.com.br",
-          "Os Mais Amados 2026 : marcas , endereços e serviços favoritos dos paulistanos",
-          "Tese",
-          [],
-          ""
-        ],
-        [
-          "27/08",
+          "01/10",
           "g1.globo.com",
-          "Candidatos ao governo do DF : educao e comércio pautam agendas",
+          "Hospital Materno - Infantil de Santarém já registra três partos após início dos atendimentos",
           "Tese",
           [],
           ""
         ],
         [
-          "27/08",
-          "g1.globo.com",
-          "Homem morto durante operao da Draco em Itaguaí  identificado",
+          "01/10",
+          "arede.info",
+          "Cachorro é morto a tiros por PM em frente a hospital em Colombo",
           "Tese",
           [],
           ""
         ],
         [
-          "27/08",
-          "gazetadigital.com.br",
-          "Candidatos cumprem agenda de entrevistas e reuniões na quinta",
+          "01/10",
+          "arede.info",
+          "Aliel Machado viabiliza quase R$ 1 bilhão para os Campos Gerais",
+          "Tese",
+          [],
+          ""
+        ],
+        [
+          "01/10",
+          "noticiasdatv.uol.com.br",
+          "Resumo de Avenida Brasil : Carminha destrói casamento de Nina e Jorginho e faz noiva até sangrar",
           "Tese",
           [],
           ""
@@ -126,71 +126,95 @@
         "trend": "down",
         "serie": [
           [
-            "abr",
-            0
-          ],
-          [
             "mai",
-            0
+            5
           ],
           [
             "jun",
-            0
+            5
           ],
           [
             "jul",
-            0
+            1
           ],
           [
             "ago",
-            5
+            1
           ],
           [
             "set",
             0
+          ],
+          [
+            "out",
+            0
           ]
         ],
         "eventos": {
-          "Tese": 5
+          "Tese": 16
         }
       },
       "feed": [
         [
-          "19/08",
-          "regiaonoroeste.com",
-          "Secretaria de Agricultura de Fernandópolis promove roda de conversa sobre combate à violência contra a mulher",
+          "28/08",
+          "oprogressonet.com",
+          "Delegao de Imperatriz se destaca nos Jogos Escolares Maranhenses 2026 , em São Luís",
           "Tese",
           [],
           ""
         ],
         [
-          "18/08",
-          "regiaonoroeste.com",
-          "Programa  Saúde no Campo  realiza edio especial com foco no combate à violência contra a mulher em Fernandópolis",
+          "10/07",
+          "jornaldebrasilia.com.br",
+          "Plano Piloto terá ao de acolhimento a pessoas em situao de rua",
           "Tese",
           [],
           ""
         ],
         [
-          "17/08",
-          "g1.globo.com",
-          "Semana da Pátria 2026 em Santarém : confira a ordem dos desfiles",
-          "Tese",
-          [],
-          ""
-        ],
-        [
-          "13/08",
+          "10/06",
           "riotimesonline.com",
-          "Rio Theatro Municipal Stages the Ballet  Dom Quixote",
+          "Rio de Janeiro Daily Brief for Wednesday , June 10 , 2026",
           "Tese",
           [],
           ""
         ],
         [
-          "13/08",
+          "09/06",
+          "acritica.net",
+          "Mural Postal Campão leva arte urbana a Campo Grande",
+          "Tese",
+          [],
+          ""
+        ],
+        [
+          "08/06",
+          "record.r7.com",
+          "Grupo ND promove plantio e doao de 630 mudas nativas durante a Semana do Meio Ambiente",
+          "Tese",
+          [],
+          ""
+        ],
+        [
+          "07/06",
           "riotimesonline.com",
-          "Colombia Tech Fest Brings an Open - Air Tech Festival to Bogotá",
+          "Rio de Janeiro Daily Brief for Sunday , June 7 , 2026",
+          "Tese",
+          [],
+          ""
+        ],
+        [
+          "04/06",
+          "riotimesonline.com",
+          "Rio de Janeiro Daily Brief for Thursday , June 4 , 2026",
+          "Tese",
+          [],
+          ""
+        ],
+        [
+          "19/05",
+          "riotimesonline.com",
+          "International Schools in Brazil for Expats : 2026 Guide",
           "Tese",
           [],
           ""
@@ -205,18 +229,14 @@
       "nome": "Agro",
       "cor": "#6DBE45",
       "news": {
-        "count": 0,
-        "avg90": 2,
-        "momentum": -1.0,
-        "trend": "down",
+        "count": 2,
+        "avg90": 1,
+        "momentum": 1.0,
+        "trend": "up",
         "serie": [
           [
-            "abr",
-            0
-          ],
-          [
             "mai",
-            0
+            2
           ],
           [
             "jun",
@@ -224,58 +244,54 @@
           ],
           [
             "jul",
-            2
+            0
           ],
           [
             "ago",
-            3
+            0
           ],
           [
             "set",
+            2
+          ],
+          [
+            "out",
             0
           ]
         ],
         "eventos": {
-          "Tese": 5
+          "Tese": 4
         }
       },
       "feed": [
         [
-          "17/08",
+          "29/09",
           "riotimesonline.com",
-          "Molinos Agro and ACA Soy Crushing Plant Is a First in Twelve Years",
+          "Jamaica PM Wants Long - Term Supply Contracts for Farmers",
           "Tese",
           [],
           ""
         ],
         [
-          "14/08",
+          "27/09",
           "riotimesonline.com",
-          "El Salvador - Belize Trade Deal Opens 400 Tariff Lines",
+          "Andes - Atlantic Corridor : What Up to US$7bn Means",
           "Tese",
           [],
           ""
         ],
         [
-          "13/08",
+          "25/05",
           "riotimesonline.com",
-          "Vaca Muerta Electric Fracturing : YPF and Halliburton Deploy Zeus",
+          "Brazil Bank Stocks Shed R$80 Billion on Credit Warning",
           "Tese",
           [],
           ""
         ],
         [
-          "12/07",
+          "23/05",
           "riotimesonline.com",
-          "Cameroon Sugar Mill : $100 Million Challenge to Castel",
-          "Tese",
-          [],
-          ""
-        ],
-        [
-          "09/07",
-          "riotimesonline.com",
-          "Brazil Fuel Subsidy : $4 . 8bn Backed as Oil Truce Collapses",
+          "Latin American Pulse for Saturday , May 23 , 2026",
           "Tese",
           [],
           ""
