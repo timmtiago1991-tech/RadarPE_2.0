@@ -1,6 +1,6 @@
 {
   "meta": {
-    "geradoEm": "05/10/2026",
+    "geradoEm": "12/10/2026",
     "janela": "últimos 30 dias",
     "baseCNPJ": "RFB/CNPJ · jan/2026",
     "fonteNoticias": "GDELT DOC API · backfill 180d"
@@ -11,9 +11,9 @@
       "nome": "Saúde",
       "cor": "#2FA98E",
       "news": {
-        "count": 487,
-        "avg90": 80,
-        "momentum": 5.09,
+        "count": 482,
+        "avg90": 321,
+        "momentum": 0.5,
         "trend": "up",
         "serie": [
           [
@@ -22,30 +22,38 @@
           ],
           [
             "jun",
-            0
+            233
           ],
           [
             "jul",
-            240
+            241
           ],
           [
             "ago",
-            0
+            490
           ],
           [
             "set",
-            359
+            337
           ],
           [
             "out",
-            128
+            145
           ]
         ],
         "eventos": {
-          "Tese": 1203
+          "Tese": 1446
         }
       },
       "feed": [
+        [
+          "10/10",
+          "otempo.com.br",
+          "Capítulo 125 : Sábado , 10 / 10 , resumo de Quem Ama Cuida ( perto do fim , fase final )",
+          "Tese",
+          [],
+          ""
+        ],
         [
           "01/10",
           "conexaoto.com.br",
@@ -101,14 +109,6 @@
           "Tese",
           [],
           ""
-        ],
-        [
-          "01/10",
-          "noticiasdatv.uol.com.br",
-          "Resumo de Avenida Brasil : Carminha destrói casamento de Nina e Jorginho e faz noiva até sangrar",
-          "Tese",
-          [],
-          ""
         ]
       ],
       "estrutura": {},
@@ -121,25 +121,25 @@
       "cor": "#123FD6",
       "news": {
         "count": 0,
-        "avg90": 2,
+        "avg90": 1,
         "momentum": -1.0,
         "trend": "down",
         "serie": [
           [
             "mai",
-            5
+            2
           ],
           [
             "jun",
-            5
+            1
           ],
           [
             "jul",
-            1
+            0
           ],
           [
             "ago",
-            1
+            0
           ],
           [
             "set",
@@ -151,70 +151,30 @@
           ]
         ],
         "eventos": {
-          "Tese": 16
+          "Tese": 3
         }
       },
       "feed": [
         [
-          "28/08",
-          "oprogressonet.com",
-          "Delegao de Imperatriz se destaca nos Jogos Escolares Maranhenses 2026 , em São Luís",
-          "Tese",
-          [],
-          ""
-        ],
-        [
-          "10/07",
-          "jornaldebrasilia.com.br",
-          "Plano Piloto terá ao de acolhimento a pessoas em situao de rua",
-          "Tese",
-          [],
-          ""
-        ],
-        [
-          "10/06",
+          "01/06",
           "riotimesonline.com",
-          "Rio de Janeiro Daily Brief for Wednesday , June 10 , 2026",
+          "Rio de Janeiro Daily Brief for Monday , June 1 , 2026",
           "Tese",
           [],
           ""
         ],
         [
-          "09/06",
-          "acritica.net",
-          "Mural Postal Campão leva arte urbana a Campo Grande",
+          "30/05",
+          "diariodoamapa.com.br",
+          "Projeto homenageia Fernando Canto com música , poesia e literatura em Macapá – Diário do Amapá",
           "Tese",
           [],
           ""
         ],
         [
-          "08/06",
-          "record.r7.com",
-          "Grupo ND promove plantio e doao de 630 mudas nativas durante a Semana do Meio Ambiente",
-          "Tese",
-          [],
-          ""
-        ],
-        [
-          "07/06",
+          "27/05",
           "riotimesonline.com",
-          "Rio de Janeiro Daily Brief for Sunday , June 7 , 2026",
-          "Tese",
-          [],
-          ""
-        ],
-        [
-          "04/06",
-          "riotimesonline.com",
-          "Rio de Janeiro Daily Brief for Thursday , June 4 , 2026",
-          "Tese",
-          [],
-          ""
-        ],
-        [
-          "19/05",
-          "riotimesonline.com",
-          "International Schools in Brazil for Expats : 2026 Guide",
+          "Santa Catarina , Brazil : 2026 Guide for Expats & Investors",
           "Tese",
           [],
           ""
@@ -229,30 +189,30 @@
       "nome": "Agro",
       "cor": "#6DBE45",
       "news": {
-        "count": 2,
-        "avg90": 1,
-        "momentum": 1.0,
-        "trend": "up",
+        "count": 3,
+        "avg90": 4,
+        "momentum": -0.25,
+        "trend": "down",
         "serie": [
           [
             "mai",
-            2
+            5
           ],
           [
             "jun",
-            0
+            2
           ],
           [
             "jul",
-            0
+            2
           ],
           [
             "ago",
-            0
+            6
           ],
           [
             "set",
-            2
+            5
           ],
           [
             "out",
@@ -260,7 +220,7 @@
           ]
         ],
         "eventos": {
-          "Tese": 4
+          "Tese": 20
         }
       },
       "feed": [
@@ -281,17 +241,49 @@
           ""
         ],
         [
-          "25/05",
+          "20/09",
           "riotimesonline.com",
-          "Brazil Bank Stocks Shed R$80 Billion on Credit Warning",
+          "Sadio Mané Mango Park Senegal | The Rio Times",
           "Tese",
           [],
           ""
         ],
         [
-          "23/05",
+          "01/09",
           "riotimesonline.com",
-          "Latin American Pulse for Saturday , May 23 , 2026",
+          "Peru Exports 2025 : Record US$90bn Tops Andean Bloc",
+          "Tese",
+          [],
+          ""
+        ],
+        [
+          "01/09",
+          "riotimesonline.com",
+          "Brazil South Africa Trade Alliance Grows as Tariffs Bite",
+          "Tese",
+          [],
+          ""
+        ],
+        [
+          "27/08",
+          "riotimesonline.com",
+          "Mozambique Development Bank Clears Final Hurdle",
+          "Tese",
+          [],
+          ""
+        ],
+        [
+          "25/08",
+          "riotimesonline.com",
+          "Paraguay doctors strike over health system collapse",
+          "Tese",
+          [],
+          ""
+        ],
+        [
+          "25/08",
+          "riotimesonline.com",
+          "Rosario Restaurants : A 2026 Guide With Addresses",
           "Tese",
           [],
           ""
