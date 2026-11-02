@@ -1,6 +1,6 @@
 {
   "meta": {
-    "geradoEm": "26/10/2026",
+    "geradoEm": "02/11/2026",
     "janela": "últimos 30 dias",
     "baseCNPJ": "RFB/CNPJ · jan/2026",
     "fonteNoticias": "GDELT DOC API · backfill 180d"
@@ -12,25 +12,21 @@
       "cor": "#2FA98E",
       "news": {
         "count": 0,
-        "avg90": 159,
+        "avg90": 1,
         "momentum": -1.0,
         "trend": "down",
         "serie": [
-          [
-            "mai",
-            485
-          ],
           [
             "jun",
             0
           ],
           [
             "jul",
-            242
+            0
           ],
           [
             "ago",
-            236
+            0
           ],
           [
             "set",
@@ -39,73 +35,77 @@
           [
             "out",
             0
+          ],
+          [
+            "nov",
+            0
           ]
         ],
         "eventos": {
-          "Tese": 963
+          "Tese": 242
         }
       },
       "feed": [
         [
-          "27/08",
+          "14/05",
           "g1.globo.com",
-          "Romeu Zema , candidato à Presidência pelo Novo , faz campanha em Minas Gerais",
+          "Acidente entre carro e carreta deixa feridos e fecha na BR - 265",
           "Tese",
           [],
           ""
         ],
         [
-          "27/08",
-          "sonoticias.com.br",
-          "Obras de nova UPA avançam em Sorriso ; R$ 20 milhões",
+          "14/05",
+          "gauchazh.clicrbs.com.br",
+          "The Dark Horse : o que se sabe sobre o filme que Flávio Bolsonaro pediu dinheiro a Vorcaro para pagar as despesas",
           "Tese",
           [],
           ""
         ],
         [
-          "27/08",
-          "bonde.com.br",
-          "Fonoaudiologia e Geologia : novos cursos da UEL abrem inscries para vestibular",
-          "Tese",
-          [],
-          ""
-        ],
-        [
-          "27/08",
+          "14/05",
           "novoeste.com",
-          "Vacinao na gravidez amplia proteo do bebê nos primeiros meses de vida",
+          "Sedentarismo eleva carga de estresse na meia - idade , aponta pesquisa",
           "Tese",
           [],
           ""
         ],
         [
-          "27/08",
-          "vejasp.abril.com.br",
-          "Os Mais Amados 2026 : marcas , endereços e serviços favoritos dos paulistanos",
+          "14/05",
+          "jaenoticia.com.br",
+          "Colisão entre carro e moto deixa motociclista ferido no Bairro Massaranduba , em Arapiraca",
           "Tese",
           [],
           ""
         ],
         [
-          "27/08",
+          "14/05",
+          "redetv.uol.com.br",
+          "Filha de Pocah é hospitalizada após crise de doença crônica :  Forte demais  RedeTV !",
+          "Tese",
+          [],
+          ""
+        ],
+        [
+          "14/05",
           "g1.globo.com",
-          "Candidatos ao governo do DF : educao e comércio pautam agendas",
+          "Condomínio onde elevador caiu e deixou três feridos processou construtora por falhas estruturais , em João Pessoa",
           "Tese",
           [],
           ""
         ],
         [
-          "27/08",
-          "g1.globo.com",
-          "Homem morto durante operao da Draco em Itaguaí  identificado",
+          "14/05",
+          "jmonline.com.br",
+          "Lobo - guará resgato pelos bombeiros segue internado em estado grave no HVU",
           "Tese",
           [],
           ""
         ],
         [
-          "27/08",
-          "gazetadigital.com.br",
-          "Candidatos cumprem agenda de entrevistas e reuniões na quinta",
+          "14/05",
+          "jmonline.com.br",
+          "Após denúncia de gastos com aluguel , Prefeitura promete abrir Centro Dia",
           "Tese",
           [],
           ""
@@ -120,18 +120,14 @@
       "nome": "Educação",
       "cor": "#123FD6",
       "news": {
-        "count": 2,
+        "count": 0,
         "avg90": 1,
-        "momentum": 1.0,
-        "trend": "up",
+        "momentum": -1.0,
+        "trend": "down",
         "serie": [
           [
-            "mai",
-            4
-          ],
-          [
             "jun",
-            4
+            1
           ],
           [
             "jul",
@@ -147,22 +143,18 @@
           ],
           [
             "out",
-            2
+            1
+          ],
+          [
+            "nov",
+            0
           ]
         ],
         "eventos": {
-          "Tese": 10
+          "Tese": 2
         }
       },
       "feed": [
-        [
-          "20/10",
-          "g1.globo.com",
-          "Aulas são afetadas em escolas de Campo Grande no 2º turno das Eleies",
-          "Tese",
-          [],
-          ""
-        ],
         [
           "01/10",
           "g1.globo.com",
@@ -172,49 +164,9 @@
           ""
         ],
         [
-          "09/06",
-          "acritica.net",
-          "Mural Postal Campão leva arte urbana a Campo Grande",
-          "Tese",
-          [],
-          ""
-        ],
-        [
-          "08/06",
-          "record.r7.com",
-          "Grupo ND promove plantio e doao de 630 mudas nativas durante a Semana do Meio Ambiente",
-          "Tese",
-          [],
-          ""
-        ],
-        [
-          "07/06",
-          "riotimesonline.com",
-          "Rio de Janeiro Daily Brief for Sunday , June 7 , 2026",
-          "Tese",
-          [],
-          ""
-        ],
-        [
-          "04/06",
-          "riotimesonline.com",
-          "Rio de Janeiro Daily Brief for Thursday , June 4 , 2026",
-          "Tese",
-          [],
-          ""
-        ],
-        [
-          "12/05",
-          "rondoniadinamica.com",
-          "Porto Velho recebe seletiva estadual do Joer que define representantes de Rondônia para competies nacionais",
-          "Tese",
-          [],
-          ""
-        ],
-        [
-          "11/05",
-          "tribunafeirense.com.br",
-          "Gilson Porto : o primeiro feirense na seleo brasileira",
+          "24/06",
+          "g1.globo.com",
+          "OBMEP : Aluno da rede pública de Terra Santa conquista ouro em premiao nacional",
           "Tese",
           [],
           ""
@@ -230,60 +182,92 @@
       "cor": "#6DBE45",
       "news": {
         "count": 0,
-        "avg90": 2,
+        "avg90": 3,
         "momentum": -1.0,
         "trend": "down",
         "serie": [
           [
-            "mai",
-            0
-          ],
-          [
             "jun",
-            0
+            3
           ],
           [
             "jul",
-            2
+            0
           ],
           [
             "ago",
-            4
+            7
           ],
           [
             "set",
-            0
+            1
           ],
           [
             "out",
             0
+          ],
+          [
+            "nov",
+            0
           ]
         ],
         "eventos": {
-          "Tese": 6
+          "Tese": 11
         }
       },
       "feed": [
         [
-          "17/08",
+          "12/09",
           "riotimesonline.com",
-          "Molinos Agro and ACA Soy Crushing Plant Is a First in Twelve Years",
+          "Italian firms Algeria agricultural mechanisation 2026",
           "Tese",
           [],
           ""
         ],
         [
-          "14/08",
+          "25/08",
           "riotimesonline.com",
-          "El Salvador - Belize Trade Deal Opens 400 Tariff Lines",
+          "Paraguay doctors strike over health system collapse",
           "Tese",
           [],
           ""
         ],
         [
-          "13/08",
+          "25/08",
           "riotimesonline.com",
-          "Vaca Muerta Electric Fracturing : YPF and Halliburton Deploy Zeus",
+          "Rosario Restaurants : A 2026 Guide With Addresses",
+          "Tese",
+          [],
+          ""
+        ],
+        [
+          "25/08",
+          "riotimesonline.com",
+          "Paraguay exports new markets : 75 products , 43 destinations",
+          "Tese",
+          [],
+          ""
+        ],
+        [
+          "20/08",
+          "riotimesonline.com",
+          "Liberia Deportees : 1 , 200 Agreed , First 20 Arrive Today",
+          "Tese",
+          [],
+          ""
+        ],
+        [
+          "10/08",
+          "riotimesonline.com",
+          "Nigeria Turns to Asia for Post - Harvest Loss Solutions",
+          "Tese",
+          [],
+          ""
+        ],
+        [
+          "07/08",
+          "riotimesonline.com",
+          "Rwanda Suspends 14 Tanzanian Alcohol Brands in Safety Crackdown",
           "Tese",
           [],
           ""
@@ -292,22 +276,6 @@
           "04/08",
           "riotimesonline.com",
           "Colombian Mato Grosso : Espriella Agro Plan",
-          "Tese",
-          [],
-          ""
-        ],
-        [
-          "24/07",
-          "riotimesonline.com",
-          "Guadalajara October Festivals 2026 : 31 Days of Music",
-          "Tese",
-          [],
-          ""
-        ],
-        [
-          "22/07",
-          "riotimesonline.com",
-          "Cementos Pacasmayo Profit Jumps 58 % on Peru Rebound",
           "Tese",
           [],
           ""
